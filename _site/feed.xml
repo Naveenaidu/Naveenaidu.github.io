@@ -5,13 +5,123 @@
     <description>Naveen's Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 20 Apr 2019 19:52:36 +0530</pubDate>
-    <lastBuildDate>Sat, 20 Apr 2019 19:52:36 +0530</lastBuildDate>
+    <pubDate>Wed, 15 May 2019 17:46:49 +0530</pubDate>
+    <lastBuildDate>Wed, 15 May 2019 17:46:49 +0530</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>A New Chapter</title>
+        <description>
+</description>
+        <pubDate>Wed, 15 May 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2019/A-New-Chapter/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/A-New-Chapter/</guid>
+        
+        
+      </item>
     
       <item>
         <title>First post</title>
         <description>&lt;p&gt;Hello There people :)&lt;/p&gt;
+
+&lt;p&gt;Welcome to my tiny weeny little space on web. I am Naveen. An undergraduate
+student from India. I study Computer Science. I do stuffs with computers and 
+sometimes write about it here. And when the philosopher in me kicks in, I pen 
+down my abstract thoughts on various subjects in the world that confuses me. I 
+also like to write about various life lessons that I learn and sometimes use 
+this place to brag about myself :P &lt;em&gt;Cough! Cough! If you noticed, I just copy
+pasted the description of homepage here :P Engineers are lazy ^^&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE: I TEND TO WRITE VERY LONG POSTS - YOU HAVE BEEN WARNED&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You wouldn’t believe me but I have been trying to set up the blog post since
+past &lt;strong&gt;4 months&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+	&lt;iframe src=&quot;https://giphy.com/embed/wxw2e19ZMsjio&quot; width=&quot;480&quot; height=&quot;480&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;
+	&lt;/iframe&gt;
+	&lt;p&gt;
+		&lt;a href=&quot;https://giphy.com/gifs/wxw2e19ZMsjio&quot;&gt;via GIPHY&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Yeah! You read it right. Fucking 4 months. And I finally set up my blog last
+month. &lt;em&gt;Why? Why? Did i take so long to set up one simple blog Not like it’s 
+great or anything.&lt;/em&gt; Well, my dear friend. It’s not my fault (It never is :P),
+Blame the choices. And my high expectations. I tend to do this often.&lt;/p&gt;
+
+&lt;p&gt;After reading so many interesting blogs and being mesmerised by their shiny 
+design I wanted to make a blog similar to them. So I set out on the journey to 
+create a mind boggling fantastic blog - Something completely out of ordinary.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+	&lt;iframe src=&quot;https://giphy.com/embed/dWhHUkuWnGxFK&quot; width=&quot;480&quot; height=&quot;358&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+	&lt;p&gt;
+		&lt;a href=&quot;https://giphy.com/gifs/full-house-bitch-please-dWhHUkuWnGxFK&quot;&gt;via GIPHY&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I didn’t know where to start. No way on Thano’s Earth would I ever resort to 
+building the website by myself (&lt;em&gt;Insider Fact: I HATE web developement - Never
+made sense to me&lt;/em&gt;). So I choose the easy way out - &lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll + Github Pages&lt;/code&gt;. 
+Atleast I thought it was going to be easy, I always underestimate things.
+It was PAIN in the ASS. I realised that I really really suck at anything
+related to web .And here, I dreamt that one day - I’ll get the entire internet
+down - There goes my plan down the drain &lt;em&gt;atleast for now&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;So yeah! I finally succeded at setting up the Github Page and understanding the
+basics of Jekyll. But I still had no themes on it. It was just a normal
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Hello World!&lt;/code&gt; text. Now Now - comes the actual and real cause of the delay.
+&lt;strong&gt;CHOICES&lt;/strong&gt; - There were so many interesting choices. Each and every choice
+was in someway better than the rest. But nothing really clicked my heart. 
+Mind You! I set my expectations to a very very high bar. I must also inform you 
+that I actually tried out 5 jekyll themes before this one xD.
+&lt;em&gt;Woah! man&lt;/em&gt;. Still, Still - I did not like any of those. I was worrying about
+the scalability about the blog.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+	&lt;iframe src=&quot;https://giphy.com/embed/ZqlvCTNHpqrio&quot; width=&quot;480&quot; height=&quot;259&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;p&gt;
+		&lt;a href=&quot;https://giphy.com/gifs/laughing-despicable-me-minions-ZqlvCTNHpqrio&quot;&gt;via GIPHY&lt;/a&gt;
+	&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Don’t Laugh!&lt;/em&gt; Every person has the right to dream :P&lt;/p&gt;
+
+&lt;p&gt;Back to the story, I was pissed off after a week. Like really really pissed out,
+any more theme change and I would literally have a mental breakdown &lt;em&gt;Don’t 
+be so overdramatic dude&lt;/em&gt;. Yeah Yeah OKay Fine!. Anyway - I finally decided that
+it can’t go on this way. Either I need to get my expectations down and become
+realistic or I can say Sayonara to my Blog. I did the former. I set down my
+expectation, choose a minimalistic theme and here I am blogging.&lt;/p&gt;
+
+&lt;p&gt;Hurrah! After 4 months - I had my own webpage and a blog.&lt;/p&gt;
+
+&lt;p&gt;Once lesson that I understood from this ordeal is: 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;JUST DO IT&lt;/code&gt;, I realised that we spend most of out time in thinking about the
+outcomes and the ways that we want to achieve things, and in this whole process
+the implementation get’s lost either because we find it very difficult or we 
+loose our interest.&lt;/p&gt;
+
+&lt;p&gt;TL;DR - Don’t overthink, If you plan to do something - just put on your shoes 
+and do it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Now, that the story of my setting up of the blog is over. I would just like to
+tell you, the reader(&lt;em&gt;I’m pretty sure the only person/thing who would read it would
+be the bots scrawling over the internet xD&lt;/em&gt;) that I would be using this place
+to put in all my un organized thoughts. So do not expect any posts to be of 
+great quality.  I generally do this in my diary but now that i spend most of the
+time on my laptop - It’s easier this way.&lt;/p&gt;
+
+&lt;p&gt;Writing down my abstract ideas have always helped me come to a conclusion. So 
+that is what I’m gonna do here. That being said, I do write some nice stuff.
+If you are up for the challenge to read through my abstract ideas and see how
+they become clear in the idea, I would be more than happy to welcome you 
+on-board.&lt;/p&gt;
+
+&lt;p&gt;That’s it for now - Maybe someother day - I’ll let in more about myself.&lt;/p&gt;
+
 </description>
         <pubDate>Sat, 20 Apr 2019 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2019/Hello-There/</link>
