@@ -5,9 +5,147 @@
     <description>Naveen's Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 May 2019 00:06:09 +0530</pubDate>
-    <lastBuildDate>Thu, 16 May 2019 00:06:09 +0530</lastBuildDate>
+    <pubDate>Thu, 16 May 2019 01:36:55 +0530</pubDate>
+    <lastBuildDate>Thu, 16 May 2019 01:36:55 +0530</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>GSoC: Accepted Yaay!</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/images/2-new-chapter/gsoc-acceptance.png&quot; alt=&quot;GSoC Acceptance&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Yaaay! I was accepted as the Google Summer of code student at coala. I have been
+waiting for this day for a long long time now (&lt;em&gt;Almost a year&lt;/em&gt;).This can be
+counted as one of my first big achievement so far :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3-gsoc-accepted-yaay/gsoc-project-webpage.png&quot; alt=&quot;GSoC Acceptance&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The project I got accepted is &lt;code class=&quot;highlighter-rouge&quot;&gt;Handling Nested Language&lt;/code&gt;. This project is about
+extending the functionality of coala to give it the support to run it’s
+analysis on files that contains nested languages (&lt;em&gt;Multiple languages in one file&lt;/em&gt;
+). I’ll be implementing the architecture that will lay down the foundation for 
+any future work. It kind of feels nice to say, that this very project has been
+rejected thrice in the last three years, because no one was able to provide a 
+proper way of acheiving it. &lt;em&gt;Hey Naveen, Stop Bragging :P&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;my-journey&quot;&gt;My Journey&lt;/h3&gt;
+
+&lt;p&gt;I won’t be going in detail about GSoC etc. There are many online resources out there. 
+I’ll be talking more about my journey to this phase. If I recall correctly,
+it all started one year ago. It was in the month of January that I got to know
+about the &lt;strong&gt;term&lt;/strong&gt; Google Summer of Code via Quora(&lt;em&gt;Back in the day, quora
+used to have nice articles&lt;/em&gt;). I had no idea back then about,
+what it actually was. I thought, that it was some internship
+oppurtunity at Google. Oh! Boy, How wrong was I.&lt;/p&gt;
+
+&lt;p&gt;I am inquisitive by nature :see_no_evil:, I popped up my browser and started
+googling about GSoC. I must admit at first shot, everything went above my head.
+The only thing that stuck with me was that the stipend was 2400$ approx 1.64 Lakhs
+in Indian Rupee. I was like:&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;div style=&quot;width:100%;height:0;padding-bottom:75%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/afjAKwdzH1KYU&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/pop-maximum-bits-afjAKwdzH1KYU&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Well, everyone needs some motivation to actually carry out the task. So my 
+motivation back then was &lt;em&gt;money&lt;/em&gt;. I don’t feel ashamed to admit it though.&lt;/p&gt;
+
+&lt;p&gt;So with the renewed motivation, I set out again to actually understand what it was.
+I watched through various Youtube Videos and read through a lot of blogs and afer
+2 days, I was able to comprehend all of it. I now understood, everything about
+GSoC. And I decided that I’ll give it a shot.&lt;/p&gt;
+
+&lt;p&gt;Mind you, back then I had zero to minus one level of experience in software 
+development. &lt;em&gt;Not that I’m better now, I’m still a shit hole - Maybe a better
+shit hole xD&lt;/em&gt;. Money was a serious motivation to me back then. And I made a pact
+with myself that I will give GSoC my best efforts.&lt;/p&gt;
+
+&lt;p&gt;All of this was during the mid January. In the next one week, I spent my entire
+time learning git, github and setting up ubuntu on my laptop. Reviving those days,
+I remember how lost I was. Git was something entirely new to me and It took me a
+very very long time to get my head around it.&lt;/p&gt;
+
+&lt;p&gt;Anyway, by the last week of January - I had a basic idea of git and the workflow
+of Github. The clock was ticking and it was time for me to choose my organisation.&lt;/p&gt;
+
+&lt;p&gt;And there I go to the organization’s list and find that there were around 150+ 
+orgs. I was SHOCKED!!!. All of the information on the pages were really 
+overwhelming.&lt;/p&gt;
+
+&lt;p&gt;I randomly started selecting organisations, and trying them out. But most of the
+organisations I choose were either very matured or the communications were cold.
+I did not even know how to use a IRC back then and setting it up was another
+nightmare. I dreaded Mailing Lists - I still do :P. And the conversations that
+happened in the chat rooms of these organisations just went all over my head.
+I wasn’t able to soak in anything. I came across new terms every 10 minutes.&lt;/p&gt;
+
+&lt;p&gt;I started loosing interest. But I did not want to give up. I never was the one to
+give up. I had one last scan on the Project Page, with a resolve of sticking with
+the organisation and overcoming it’s hurdles. This time I chose a non conventional
+method. I started selecting the organisations by their logos xD&lt;/p&gt;
+
+&lt;p&gt;And amidts this pointeless quest of mine, I found my treasure. The cute coala bear.
+The logo was really cute. I decided to check it out. The information about the
+organisation wasn’t very interesting to me back then :sweat_smile:, but I
+anyway decided to lurk on their gitter channel.&lt;/p&gt;
+
+&lt;p&gt;So, there I go, type in &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello World&lt;/code&gt; as mentioned in the Newcomer docs. And 
+immediately I get treated by the corobo ( the chat bot for coala) with all 
+the information. And it was then that I finally fell in love with that organisation.&lt;/p&gt;
+
+&lt;p&gt;And the rest is history (&lt;em&gt;I’ll explain about what happened after that in some other
+post later&lt;/em&gt;).&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;TL;DR - I started contributing to coala. The community is just awesome. 
+Could not get in that year. Stuck around. Contributed more. Got bashed. 
+Primary Motivation changes from Money to Fun. Got appreciated. 
+Got invited  to become a Google Code In Mentor. Got bashed again. 
+Had fun helping students fix their bug. Started working on my proposal. 
+The community was dead for  some time. Maintainer  were busy with 
+their work.  Spent loads of time on preparing the proposals. Made 
+the draft. Submitted. Got accepted :)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;There’s a lot more spice to it. I’ll talk about it in a later post :)&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h3&gt;
+
+&lt;p&gt;The current month is allocated for Community Bonding Period, where I meet my 
+mentors, get acquainted with them, prepare a proper understanding of my project
+and refine the timelines.&lt;/p&gt;
+
+&lt;p&gt;The next month will be a challenge to me as I would be having my College finals
+starting from June 13 to July 3rd. It’s going to be tough! but I love it this way
+:)&lt;/p&gt;
+
+&lt;h3 id=&quot;thanks-people&quot;&gt;Thanks! people!&lt;/h3&gt;
+
+&lt;p&gt;This blog post was intended to thank everyone involved. Special thanks goes to 
+Mischa Kruger, without him - I would never have been able to make a proposal.
+He helped me clear all my doubts and helped me lay the first basic foundation
+of the project. I will always be indebted to him.&lt;/p&gt;
+
+&lt;p&gt;I would also thank Dong he naa, Virresh and Saurav - without their valuable inputs
+, My proposal would have been filled with lot’s of loopholes.&lt;/p&gt;
+
+&lt;p&gt;I also would like to thank My Parents, My Brother and My Roomates - Naren(&lt;em&gt;Soon to be my Ex-Roomate&lt;/em&gt;) and Amit,
+for being there when I needed them and for all their support :)&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;
+	&lt;iframe src=&quot;https://giphy.com/embed/3oz8xIsloV7zOmt81G&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;
+		&lt;a href=&quot;https://giphy.com/gifs/arg-thank-you-cat-3oz8xIsloV7zOmt81G&quot;&gt;via GIPHY&lt;/a&gt;
+&lt;/p&gt;
+&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 16 May 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2019/GSoC-Accepted-Yaay!/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/GSoC-Accepted-Yaay!/</guid>
+        
+        
+      </item>
     
       <item>
         <title>A New Chapter</title>
