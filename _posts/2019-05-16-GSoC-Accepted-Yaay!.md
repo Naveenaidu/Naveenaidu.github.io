@@ -116,19 +116,16 @@ starting from June 13 to July 3rd. It's going to be tough! but I love it this wa
 
 ### Thanks! people!
 
-This blog post was intended to thank everyone involved. 
-
-Firstly, all my gratitude goes to these special people of mine - My Parents, 
-My Brother and My Roomates - Naren(*Soon to be my Ex-Roomate*) and Amit, Kaushik, Pavan
-for being there when I needed them and for all their support :)
-
-Special thanks goes to Mischa Kruger, without him - I would never have been
-able to make a proposal. He helped me clear all my doubts and helped me lay the 
-first basic foundation of the project seven days before the deadline. 
-I will always be indebted to him. 
+This blog post was intended to thank everyone involved. Special thanks goes to 
+Mischa Kruger, without him - I would never have been able to make a proposal.
+He helped me clear all my doubts and helped me lay the first basic foundation
+of the project. I will always be indebted to him.
 
 I would also thank Dong he naa, Virresh and Saurav - without their valuable inputs
-,My proposal would have been filled with lot's of loopholes.
+, My proposal would have been filled with lot's of loopholes.
+
+I also would like to thank My Parents, My Brother and My Roomates - Naren(*Soon to be my Ex-Roomate*) and Amit,
+for being there when I needed them and for all their support :)
 
 <p align="center">
 <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
