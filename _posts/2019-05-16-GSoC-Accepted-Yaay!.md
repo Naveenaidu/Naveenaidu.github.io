@@ -119,7 +119,7 @@ starting from June 13 to July 3rd. It's going to be tough! but I love it this wa
 This blog post was intended to thank everyone involved. 
 
 Firstly, all my gratitude goes to these special people of mine - My Parents, 
-My Brother and My Roomates - Naren(*Soon to be my Ex-Roomate*) and Amit, Kaushik
+My Brother and My Roomates - Naren(*Soon to be my Ex-Roomate*) and Amit, Kaushik, Pavan
 for being there when I needed them and for all their support :)
 
 Special thanks goes to Mischa Kruger, without him - I would never have been
