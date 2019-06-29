@@ -363,6 +363,8 @@ which would contain the snippets of that language from the original nested file.
 
 This phase uses the `Parser` and the `NlFileHandler` parts of the architecture.
 
+## Phase 2: Segregation of Nested File
+
 ### Parser
 
 * Parser is responsible for splitting the original file into different 
