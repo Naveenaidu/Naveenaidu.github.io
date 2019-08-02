@@ -14,8 +14,6 @@ for the project `Implementation of Boost.Context Module on s390x".`
 
 ## What are all the weird terms on the above line?
 
-<Img of confused person>
-
 I promise you that I'll explain all of the above term in details, when I do get
 some free time. For now, I'll restrict myself to descrbing these terms in as 
 simple manner as I can.
