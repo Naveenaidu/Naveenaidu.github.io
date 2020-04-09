@@ -2,6 +2,7 @@
 layout: post
 title: "Journal: Me and my confused self :face_palm:"
 comments: true
+category: "journal"
 description: "Trying to find a way through the mist of confusion"
 keywords: "journal, personal"
 ---

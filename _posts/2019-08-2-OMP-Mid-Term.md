@@ -2,6 +2,7 @@
 layout: post
 title: "OMP: MidTerm Overview"
 comments: true
+category: "omp-2019"
 description: "A Brief overview of mid term work at OMP"
 keywords: "OMP, internship, s390x"
 ---

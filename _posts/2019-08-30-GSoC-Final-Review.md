@@ -2,6 +2,7 @@
 layout: post
 title: "GSoC: Final Report"
 comments: true
+category: "gsoc-2019"
 description: "A Brief overview of work done during GSoC"
 keywords: "GSoCP, internship, coala"
 ---

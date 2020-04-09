@@ -2,6 +2,7 @@
 layout: post
 title: "First post"
 comments: true
+category: "personal"
 description: "The First Post"
 keywords: "personal"
 ---

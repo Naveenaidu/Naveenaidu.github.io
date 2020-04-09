@@ -2,6 +2,7 @@
 layout: post
 title: "Journal: Conversation with Mom"
 comments: true
+category: "journal"
 description: ""
 keywords: "journal, personal, "
 ---

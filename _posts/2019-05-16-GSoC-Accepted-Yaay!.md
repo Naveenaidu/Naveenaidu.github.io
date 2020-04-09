@@ -2,6 +2,7 @@
 layout: post
 title: "GSoC: Accepted Yaay!"
 comments: true
+category: ["gsoc-2019"]
 description: ""
 keywords: "internship, gsoc"
 ---

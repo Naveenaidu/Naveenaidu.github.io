@@ -2,6 +2,7 @@
 layout: post
 title: "Journal: Conversation with Sam"
 comments: true
+category: "journal"
 description: "Conversation with Sam"
 keywords: "journal, personal"
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: "A New Chapter"
 comments: true
+category: ["personal", "gsoc-2019", "omp-2019"]
 description: ""
 keywords: "internship, personal, gsoc, omp"
 ---

@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+<style type="text/css">
+  .tag_count {
+   color: #9A9;       
+   font-size: 16px;  
+  }
+
+  .anchor-list{padding:0px 0px 17px 0px;}
+  .anchor-list li{list-style:none; padding:0px 2px;background-color:#fff; border:0px solid #e7eaf1; border-radius:3px;}
+  .anchor-list li .tag{border:1px solid #e7eaf1; padding:4px 8px 1px 8px; margin-right:8px; font-size:20px; line-height:34px;
+                       border-radius:3px; background-color:#FAF9FF;}
+</style>
+
+<ul class="anchor-list">
+<li>
+     {% for category in site.categories %}
+        <a href="#{{ category | first }}" class="tag">{{ category | first }}</a>
+     {% endfor %}
+</li>
+</ul>
+
+{% for category in site.categories %}
+  <span id="{{ category | first }}"> </span>
+  <h3>{{ category | first }} <sup><span class="tag_count">({{ category | last | size }})</span></sup> </h3>  
+      <ul class="arc-list">
+         {% for post in category.last %}
+            <li style="list-style:none"><span class="post-meta">{{ post.date | date:"%Y-%m-%d"}}</span>&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+         {% endfor %}
+     </ul>
+{% endfor %}
