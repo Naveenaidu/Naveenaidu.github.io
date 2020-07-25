@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Naveenaidu</title>
+    <link>http://www.example.com/</link>
+    <description>Recent content on Naveenaidu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Sep 2019 16:30:06 +0530</lastBuildDate>
+    
+	<atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Journal: Me and my confused self :/</title>
+      <link>http://www.example.com/posts/journal-me-and-my-confused-self/</link>
+      <pubDate>Wed, 18 Sep 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/journal-me-and-my-confused-self/</guid>
+      <description>Dear Reader,
+Here we are again. Just after I thought that I had everything sorted out in the last blog. It seems nothing is. But this blog isn&amp;rsquo;t about cribbing. Bcoz if i start cribbing - The cycle will continue and I&amp;rsquo;ll never move forward. This blog is about me finding a way or atleast trying to find a way out of this mist.
+One thing I know for sure, is that I cannot sit quietly doing nothing.</description>
+    </item>
+    
+    <item>
+      <title>Journal: Conversation with Sam</title>
+      <link>http://www.example.com/posts/journal-conv-sam/</link>
+      <pubDate>Sun, 08 Sep 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/journal-conv-sam/</guid>
+      <description>Dear Sam,
+Here I am again writing another experience of my life. Before I go on, I&amp;rsquo;ll just write down the usual satuatory warning for the readers. Dear Readers, the following are my opinions and my opinions only. Some of the following content might be harsh and might not suit your taste. And most of the content might not even have a logical connection between them. So if messed up coffee isn&amp;rsquo;t your cup of tea - Then please go on and read my other tech posts.</description>
+    </item>
+    
+    <item>
+      <title>GSOC: Handle Nested Languages Overview</title>
+      <link>http://www.example.com/posts/gsoc-final-phase/</link>
+      <pubDate>Fri, 30 Aug 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/gsoc-final-phase/</guid>
+      <description>Hiya Everyone!!
+This post will explain in brief about the work I had done during the Google Summer of Code 2019 with coala. For the unitiated, my project was to give coala the capability to handle nested programming language in a single file.
+ The Official link to the project is here My Proposal for the project is here  I must say, there is a huge contrast between the project proposal I submitted and the actual implementation.</description>
+    </item>
+    
+    <item>
+      <title>OMP: MidTerm Overview</title>
+      <link>http://www.example.com/posts/omp-midterm/</link>
+      <pubDate>Fri, 02 Aug 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/omp-midterm/</guid>
+      <description>Heya Everyone,
+This post is dedicated for my work done until now at Open Mainframe Project. For the unititated, I got selected for the Open Mainframe Project as an intern for the project Implementation of Boost.Context Module on s390x&amp;quot;.
+What are all the weird terms on the above line? I promise you that I&amp;rsquo;ll explain all of the above term in details, when I do get some free time. For now, I&amp;rsquo;ll restrict myself to descrbing these terms in as simple manner as I can.</description>
+    </item>
+    
+    <item>
+      <title>GSOC: Phase 1 Overview</title>
+      <link>http://www.example.com/posts/gsoc-phase-1/</link>
+      <pubDate>Fri, 28 Jun 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/gsoc-phase-1/</guid>
+      <description>Hiya crawlers!
+This post will cover my learnings of phase 1 of GSoC with coala. As I explained in my previous GSOC post about the 4 different phases of my project. For the uninitatied, the project for my GSoC is to add functionality into coala which would enable it into Linting files that have nested languages.
+I divided my project into 4 phases:
+ Information Gathering Segregating the nested file Linting the file Assembling  For the newbies here, I highly suggest that you read the previous blog about the project.</description>
+    </item>
+    
+    <item>
+      <title>Journal: Conversation with Mom</title>
+      <link>http://www.example.com/posts/journal-conversation-with-mom/</link>
+      <pubDate>Sat, 15 Jun 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/journal-conversation-with-mom/</guid>
+      <description>Yo! Bots.
+How&amp;rsquo;s life for you guys going on. You must be pretty tired crawling through millions of pages in a millisecond. So here&amp;rsquo;s another nice little post that would hold no significance to you and as usual you end up ignoring this post as never show it on Index your Master - The Search Engine.
+Anyway! Here it goes. The following is a conversation with my maa. Rather it&amp;rsquo;s a one way conversation where I just type up all that I feel to her and send it.</description>
+    </item>
+    
+    <item>
+      <title>GSOC: Handle Nested Languages Overview</title>
+      <link>http://www.example.com/posts/gsoc-overview-handle-nested-languages/</link>
+      <pubDate>Fri, 14 Jun 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/gsoc-overview-handle-nested-languages/</guid>
+      <description>Hola Amigos!
+The Coding Phase - 1  of GSoC has started and it has been pretty fun. I also have my University Finals going on now. They&amp;rsquo;ll end on July 3rd. Banglore does live in a different kind of world :P - Phew! This is a really busy month. I have to manage Finals, GSoC and Open Mainframe Internship cocurrently. I like this kind of atmosphere though. It keeps me on my toes and pushes me to break my own boundaries and limits that I so absent mindedly set upon on myself.</description>
+    </item>
+    
+    <item>
+      <title>Journal: Conflicts in emotions GSoC</title>
+      <link>http://www.example.com/posts/first-journal-entry/</link>
+      <pubDate>Mon, 27 May 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/first-journal-entry/</guid>
+      <description>Note: The following is a conversation that I have with myself. Most of it might not make sense to you. And there might not be any proper connection between points. That being said, this was written for my reference only. But you are more than welcome to go through it and have fun - if you like reading things that makes no sense :)
+Hey People,
+Here I am again. This post is regarding the conflict of emotion that I have been facing since quite some time.</description>
+    </item>
+    
+    <item>
+      <title>GSOC: Accepted Yaay!</title>
+      <link>http://www.example.com/posts/gsoc-accepted/</link>
+      <pubDate>Thu, 16 May 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/gsoc-accepted/</guid>
+      <description>Yaaay! I was accepted as the Google Summer of code student at coala. I have been waiting for this day for a long long time now (Almost a year).This can be counted as one of my first big achievement so far :)
+The project I got accepted is Handling Nested Language. This project is about extending the functionality of coala to give it the support to run it&amp;rsquo;s analysis on files that contains nested languages (Multiple languages in one file ).</description>
+    </item>
+    
+    <item>
+      <title>A New Chapter</title>
+      <link>http://www.example.com/posts/a-new-chapter/</link>
+      <pubDate>Wed, 15 May 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/a-new-chapter/</guid>
+      <description>Hola People!
+It&amp;rsquo;s been raining since evening here. Though I&amp;rsquo;m not much of a rainy person, I like the cold breeze that the rain bring with it. The feeling of the cold breeze rustling through my hair and my face rejuvenates me. In one word, it&amp;rsquo;s orgasmic. I do not have any pictures of today, But I&amp;rsquo;ll make sure to capture a few when the weather turns sexy again.
+Anyway this post is about the New Adventure that I have embarked upon.</description>
+    </item>
+    
+    <item>
+      <title>Hello There</title>
+      <link>http://www.example.com/posts/hello-there/</link>
+      <pubDate>Sat, 20 Apr 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/hello-there/</guid>
+      <description>Hello There people :)
+Welcome to my tiny weeny little space on web. I am Naveen. An undergraduate student from India. I study Computer Science. I do stuffs with computers and sometimes write about it here. And when the philosopher in me kicks in, I pen down my abstract thoughts on various subjects in the world that confuses me. I also like to write about various life lessons that I learn and sometimes use this place to brag about myself :P Cough!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://www.example.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/about/</guid>
+      <description>Bio Hello, Homosapein!
+I&amp;rsquo;m Naveen. Welcome to my tiny little space on the web :)
+I&amp;rsquo;m currently working as a Haskell Engineer at Hasura
+I do stuffs with computers and sometimes write about it here. And when the philosopher in me kicks in, I pen down my abstract thoughts on various subjects in the world that confuses me. I also like to write about various life lessons that I learn and sometimes use this place to brag about myself :P</description>
+    </item>
+    
+  </channel>
+</rss>

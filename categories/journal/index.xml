@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>journal on Naveenaidu</title>
+    <link>http://www.example.com/categories/journal/</link>
+    <description>Recent content in journal on Naveenaidu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Sep 2019 16:30:06 +0530</lastBuildDate>
+    
+	<atom:link href="http://www.example.com/categories/journal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Journal: Me and my confused self :/</title>
+      <link>http://www.example.com/posts/journal-me-and-my-confused-self/</link>
+      <pubDate>Wed, 18 Sep 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/journal-me-and-my-confused-self/</guid>
+      <description>Dear Reader,
+Here we are again. Just after I thought that I had everything sorted out in the last blog. It seems nothing is. But this blog isn&amp;rsquo;t about cribbing. Bcoz if i start cribbing - The cycle will continue and I&amp;rsquo;ll never move forward. This blog is about me finding a way or atleast trying to find a way out of this mist.
+One thing I know for sure, is that I cannot sit quietly doing nothing.</description>
+    </item>
+    
+    <item>
+      <title>Journal: Conversation with Sam</title>
+      <link>http://www.example.com/posts/journal-conv-sam/</link>
+      <pubDate>Sun, 08 Sep 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/journal-conv-sam/</guid>
+      <description>Dear Sam,
+Here I am again writing another experience of my life. Before I go on, I&amp;rsquo;ll just write down the usual satuatory warning for the readers. Dear Readers, the following are my opinions and my opinions only. Some of the following content might be harsh and might not suit your taste. And most of the content might not even have a logical connection between them. So if messed up coffee isn&amp;rsquo;t your cup of tea - Then please go on and read my other tech posts.</description>
+    </item>
+    
+    <item>
+      <title>Journal: Conversation with Mom</title>
+      <link>http://www.example.com/posts/journal-conversation-with-mom/</link>
+      <pubDate>Sat, 15 Jun 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/journal-conversation-with-mom/</guid>
+      <description>Yo! Bots.
+How&amp;rsquo;s life for you guys going on. You must be pretty tired crawling through millions of pages in a millisecond. So here&amp;rsquo;s another nice little post that would hold no significance to you and as usual you end up ignoring this post as never show it on Index your Master - The Search Engine.
+Anyway! Here it goes. The following is a conversation with my maa. Rather it&amp;rsquo;s a one way conversation where I just type up all that I feel to her and send it.</description>
+    </item>
+    
+    <item>
+      <title>Journal: Conflicts in emotions GSoC</title>
+      <link>http://www.example.com/posts/first-journal-entry/</link>
+      <pubDate>Mon, 27 May 2019 16:30:06 +0530</pubDate>
+      
+      <guid>http://www.example.com/posts/first-journal-entry/</guid>
+      <description>Note: The following is a conversation that I have with myself. Most of it might not make sense to you. And there might not be any proper connection between points. That being said, this was written for my reference only. But you are more than welcome to go through it and have fun - if you like reading things that makes no sense :)
+Hey People,
+Here I am again. This post is regarding the conflict of emotion that I have been facing since quite some time.</description>
+    </item>
+    
+  </channel>
+</rss>

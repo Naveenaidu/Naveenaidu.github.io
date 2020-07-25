@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Naveen Naidu">
+    <meta name="description" content="Hola Amigos!
+The Coding Phase - 1  of GSoC has started and it has been pretty fun. I also have my University Finals going on now. They&rsquo;ll end on July 3rd. Banglore does live in a different kind of world :P - Phew! This is a really busy month. I have to manage Finals, GSoC and Open Mainframe Internship cocurrently. I like this kind of atmosphere though. It keeps me on my toes and pushes me to break my own boundaries and limits that I so absent mindedly set upon on myself.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GSOC: Handle Nested Languages Overview"/>
+<meta name="twitter:description" content="Hola Amigos!
+The Coding Phase - 1  of GSoC has started and it has been pretty fun. I also have my University Finals going on now. They&rsquo;ll end on July 3rd. Banglore does live in a different kind of world :P - Phew! This is a really busy month. I have to manage Finals, GSoC and Open Mainframe Internship cocurrently. I like this kind of atmosphere though. It keeps me on my toes and pushes me to break my own boundaries and limits that I so absent mindedly set upon on myself."/>
+
+    <meta property="og:title" content="GSOC: Handle Nested Languages Overview" />
+<meta property="og:description" content="Hola Amigos!
+The Coding Phase - 1  of GSoC has started and it has been pretty fun. I also have my University Finals going on now. They&rsquo;ll end on July 3rd. Banglore does live in a different kind of world :P - Phew! This is a really busy month. I have to manage Finals, GSoC and Open Mainframe Internship cocurrently. I like this kind of atmosphere though. It keeps me on my toes and pushes me to break my own boundaries and limits that I so absent mindedly set upon on myself." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.example.com/posts/gsoc-overview-handle-nested-languages/" />
+<meta property="article:published_time" content="2019-06-14T16:30:06+05:30" />
+<meta property="article:modified_time" content="2019-06-14T16:30:06+05:30" />
+
+
+    
+      <base href="http://www.example.com/posts/gsoc-overview-handle-nested-languages/">
+    
+    <title>
+  GSOC: Handle Nested Languages Overview · Naveenaidu
+</title>
+
+    
+      <link rel="canonical" href="http://www.example.com/posts/gsoc-overview-handle-nested-languages/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://www.example.com/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="http://www.example.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://www.example.com/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://www.example.com/">
+      Naveenaidu
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://www.example.com/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://www.example.com/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://www.example.com/projects/">Projects</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">GSOC: Handle Nested Languages Overview</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2019-06-14T16:30:06&#43;05:30'>
+                June 14, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              15-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="http://www.example.com/categories/gsoc-2019/">gsoc-2019</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Hola Amigos!</p>
+<p>The <code>Coding Phase - 1 </code> of GSoC has started and it has been pretty fun. I also have my University Finals going on now. They&rsquo;ll end on July 3rd. Banglore does
+live in a different kind of world :P - Phew! This is a really busy month. I
+have to manage Finals, GSoC and Open Mainframe Internship cocurrently. I like
+this kind of atmosphere though. It keeps me on my toes and pushes me to break
+my own boundaries and limits that I so absent mindedly set upon on myself.
+And it&rsquo;s pretty damn fun.</p>
+<p>There&rsquo;s a different craze - The adrenaline that rushes through your body, when
+you put on your headphones, and sit infront of your laptop to code and learn
+lot&rsquo;s of new stuff everyday. <code>It's finger licking good</code> (<em>EWWW! You can
+come with better exclamation Naveen :facepalm:</em>). There has been a lot of
+Aha! moments until now as well. And some moments where I felt like hitting
+<code>Anne</code> so hard that all her teeths come out. Oh! For the unintiated - Anne is
+the name of my Laptop. She&rsquo;s so fucking good. Especially when the red color
+light&rsquo;s her body up. Alright! I won&rsquo;t go on about Anne more - Else it would get more intimate :speak_no_evil: But all in all - Anne is a good girl and she&rsquo;s
+mine. So People! Keep your hands of her - It&rsquo;s pretty well encrypted anyways -
+You won&rsquo;t be able to get any fun just by laying your hands on it. Hehehe!</p>
+<p>Ah! Here it is again. I shifted from the topic - And I&rsquo;m too lazy to go back
+and erase it up. So I&rsquo;ll let that be there anyway.</p>
+<p>Coming back to the point! This post is to introduce you(<em>you - as in the bots
+of the internet</em>) about <code>What my project is?</code> and <code>A brief Overview of the project</code>.</p>
+<p>The title of my project is <code>Handle Nested languages</code>.</p>
+<p><strong><em>The proposal for this project is present <a href="https://docs.google.com/document/d/16M3KMf8pS0NmuFPeWR0hVbK-kpZZEKDKs3CQwXmOBu4/edit?usp=sharing">here</a></em></strong></p>
+<h2 id="introduction">Introduction</h2>
+<p>coala in its present state is capable of providing efficient static analysis
+to only those file that contains a single programming language. But Multiple
+programming languages can coexist in a single source file.Eg: <code>PHP and HTML</code> ,
+<code>HTML and Jinja</code> , <code>Python and Jinja</code> , <code>codeblocks and RST</code> etc.</p>
+<p>coala does not yet support these kind of files. This project would enable coala
+to deal with those situations and allow people to write code analysis similar to
+how they already do it while being applicable to the right locations at the
+right files.The users of coala would not have to concentrate on writing new
+bears/ analysis routines. This implementation would perfectly work with the
+existing bears.</p>
+<p>There can be several ways to approach this. In this cEP, we will be implementing
+a abstract way which will support arbitrary combination of languages.</p>
+<h2 id="a-higher-level-view-of-the-implementation">A higher level view of the implementation</h2>
+<p>A source file containing multiple programming languages is loaded up by coala.
+The original nested file is broken/split into <code>n</code> temporary files, where n is
+the number of languages present in the original file. Each temporary file only
+contains the snippets belonging to one language.</p>
+<p>These temporary files would then be passed to their respective language bears
+( <em>chosen by the user</em>) where the static analysis routines would run. The
+temporary files after being linted would then be assembled.</p>
+<p>The above process creates the illusion that the original file is being linted,
+but in reality we divide the files into different parts and lint them one by
+one.</p>
+<p>The figure below, would help give a clear picture</p>
+<p><img src="http://www.example.com/images/4-gsoc-overview-nested-languages/high_level_view_handle_nested.jpg" alt="higher_level_view"></p>
+<h2 id="nested-language-section-nl_section">Nested Language Section (nl_section)</h2>
+<p>The original file is segregated into small pieces/units where each piece/unit
+purely contains only <code>one language</code>. These quantum pieces of the the nested
+original file is termed as <code>nl_section</code>.</p>
+<p>A <code>nl_section</code> can further be defined as a group of lines in the source code that
+purely belongs to one particular language.</p>
+<p>All the <code>nl_sections</code> that belong to one particular language are grouped to form
+a valid file of that programming language.</p>
+<p>The following figure would make the things clear</p>
+<p><img src="http://www.example.com/images/4-gsoc-overview-nested-languages/file_section.jpg" alt="nl_section"></p>
+<p>In the above figure, we have a file which contains both HTML and PHP code. This
+original file can be broken up into 4 different sections.</p>
+<p>Each nl_section will contain the following information:</p>
+<ol>
+<li>The Programming language of the lines</li>
+<li>Index of the section</li>
+<li>Starting Line number in the original file</li>
+<li>Ending Line number in the original file</li>
+<li>Starting line number in the linted file</li>
+<li>Ending line number in the linted file</li>
+</ol>
+<h1 id="prototype-of-nl_section">Prototype of nl_section</h1>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">class</span> <span style="color:#0a0;text-decoration:underline">NlSection</span>(TextRange):
+
+    <span style="color:#00a">def</span> __init__(self,
+                 orig_start: NlSectionPosition,
+                 orig_end: (NlSectionPosition, None) = None,
+                 index=None,
+                 language=None):
+        <span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">        Creates a new NlSection.
+</span><span style="color:#a50">
+</span><span style="color:#a50">        :param orig_start:  A NlSectionPosition indicating the start of the 
+</span><span style="color:#a50">                            section in original file.
+</span><span style="color:#a50">        :param orig_end:    A NlSectionPosition indicating the end of the 
+</span><span style="color:#a50">                            section in the original file.
+</span><span style="color:#a50">                            If ``None`` is given, the start object will be used
+</span><span style="color:#a50">                            here. end must be in the same file and be greater
+</span><span style="color:#a50">                            than start as negative ranges are not allowed.
+</span><span style="color:#a50">        :param language:    The programming language of the lines.
+</span><span style="color:#a50">        :param index:       The index of the nl_section.
+</span><span style="color:#a50">        :raises TypeError:  Raised when
+</span><span style="color:#a50">                            - start is not of type NlSectionPosition.
+</span><span style="color:#a50">                            - end is neither of type NlSectionPosition, nor 
+</span><span style="color:#a50">                              is it None.
+</span><span style="color:#a50">        :raises ValueError: Raised when file of start and end mismatch.
+</span><span style="color:#a50">        &#34;&#34;&#34;</span>
+        TextRange.__init__(self, start, end)
+        self.index = index
+        self.language = language
+
+        <span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">        :linted_start: The start of the section in the linted file.Initially it 
+</span><span style="color:#a50">                       is same as that of the start of the original file. It 
+</span><span style="color:#a50">                       changes only when any patches are applied on that line.
+</span><span style="color:#a50">        :linted_end:   The end of the section in the linted file.Initially it 
+</span><span style="color:#a50">                       is same as that of the end of the original file. It 
+</span><span style="color:#a50">                       changes only when any patches are applied on that line.
+</span><span style="color:#a50">        &#34;&#34;&#34;</span>
+        self.linted_start = start
+        self.linted_end = end
+
+        <span style="color:#00a">if</span> self.start.file != self.end.file:
+            <span style="color:#00a">raise</span> ValueError(<span style="color:#a50">&#39;File of start and end position do not match.&#39;</span>)
+
+    <span style="color:#888">@classmethod</span>
+    <span style="color:#00a">def</span> <span style="color:#0a0">from_values</span>(cls,
+                    <span style="color:#0aa">file</span>,
+                    start_line=None,
+                    start_column=None,
+                    end_line=None,
+                    end_column=None,
+                    index=None,
+                    language=None):
+        start = NlSectionPosition(<span style="color:#0aa">file</span>, start_line, start_column)
+        <span style="color:#00a">if</span> end_line <span style="color:#00a">or</span> (end_column <span style="color:#00a">and</span> end_column &gt; start_column):
+            end = NlSectionPosition(<span style="color:#0aa">file</span>, end_line <span style="color:#00a">if</span> end_line <span style="color:#00a">else</span> start_line,
+                                 end_column)
+        <span style="color:#00a">else</span>:
+            end = None
+
+        <span style="color:#00a">return</span> cls(start, end, index, language)
+
+
+</code></pre></div><h3 id="note">Note</h3>
+<p>The implementation of the nested language architecture would be done inside the
+a new folder called as <code>nestedlib</code> . This <code>nestedlib</code> would be present under
+the <code>coalib</code> directory.</p>
+<h2 id="architecture">Architecture</h2>
+<p>The following figure depicts the architecture that is going to be implemented
+to enable nested languages support.</p>
+<p><img src="http://www.example.com/images/4-gsoc-overview-nested-languages/arch-detailed.jpg" alt="Architecture"></p>
+<ul>
+<li><strong>NLCore</strong></li>
+</ul>
+<p>This is the heart of the project. It is responsible to manage the execution flow
+in the program</p>
+<ul>
+<li><strong>NLInfoExtractor</strong></li>
+</ul>
+<p>NLInfoExtractor is responsible to extract the information from the user&rsquo;s input.
+The extracted information would include the languages present in the file,
+bears to run for each programming language and the settings of these bears.</p>
+<ul>
+<li><strong>Parser</strong></li>
+</ul>
+<p>Parser splits up the original nested file into different <code>nl_sections</code>.</p>
+<ul>
+<li><strong>NLFileHandler</strong></li>
+</ul>
+<p>NL FileHandler is responsible for creating the temporary files (<em>which contains
+all the sections belonging to a single language</em>) that would be passed for the
+actual analysis.</p>
+<h2 id="implementation">Implementation</h2>
+<p>This project will be implemented in four phases:</p>
+<ul>
+<li>Information Gathering</li>
+<li>Segregating the file</li>
+<li>Linting the file</li>
+<li>Assembling</li>
+</ul>
+<h2 id="phase-1-information-gathering">Phase 1: Information Gathering</h2>
+<p>The users can inform coala about the presence of nested languages in the files
+using the <code>--handle-nested</code> flag.</p>
+<p>eg:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">coala --handle-nested --files=html_php_file.html --language=html,php --bears=HTMLBear,PHPBear 
+</code></pre></div><ul>
+<li><code>--languages</code>: Informs coala about the languages present in the file</li>
+<li><code>--bears</code>: Informs coala about the bears to run on the file.</li>
+</ul>
+<p>The aim of information gathering is to extract the following information from
+the arguments passed to coala:</p>
+<ol>
+<li>Languages present in the file</li>
+<li>Language and Bear association</li>
+<li>Argument list (<strong>would be used to create coala sections</strong>)</li>
+</ol>
+<p>The languages present in the file can easily be gathered from the <code>--language</code>
+tag. The language and Bear association information can be attained by using
+the meta information of the bear and matching it with the <code>--languages</code>.</p>
+<p><code>NlInfoExtractor</code> is responsible for the above tasks.</p>
+<p>The original nested language file is divided into various temporary
+in-memory files, where each file contains the snippets of one particular
+language. The linting needs to be done by the respective bears on each of the
+file.</p>
+<p>In order to do so, we would have to create <code>virtual coala sections</code> for
+each file.</p>
+<p>Each section, would contain the information about the files to be linted, the
+bears to run on those files and the setting to initialize the bear with. In
+order to create these sections we would need the <code>arguments</code> to be passed to
+the <code>parse_cli()</code>  method. The arguments used to initialize coala in nested
+language mode cannot be used to create the coala sections.</p>
+<p>The NlInfoExtractor converts the original arguments into different argument list,
+where each argument list resembles the argument that a user would have passed
+if he was linting a single temp_file with the appropriate bears.</p>
+<p>For eg:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">coala --handle-nested --file=html_php_file.html --language=html,php --bears=HTMLBear,PHPBear 
+</code></pre></div><p>gets converted to:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">coala --file=temp_html_file --language=html --bears=HTMLBear 
+</code></pre></div><p>and</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">coala --file=temp_php_file --language=php --bears=PHPBear  
+</code></pre></div><p>The above arguments when passed to the <code>parse_cli()</code> method, creates two
+section:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">[nl.html]
+<span style="color:#a00">files</span> = temp_html_file
+<span style="color:#a00">bears</span> = HTMLBear
+<span style="color:#a00">setting</span> = value
+
+[nl.php]
+<span style="color:#a00">files</span> = temp_php_file
+<span style="color:#a00">bears</span> = PHPBear
+<span style="color:#a00">setting</span> = value
+</code></pre></div><h3 id="nlinfoextractorpy-prototype">NlInfoExtractor.py Prototype</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">def</span> <span style="color:#0a0">extract_info</span>(args):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Return a dictionary called as `nl_info_dict` with all the extracted 
+</span><span style="color:#a50">	information.
+</span><span style="color:#a50">
+</span><span style="color:#a50">	Let&#39;s assume that we have the following arguments
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt;args = coala --handle-nested --file=html_php_file.html --language=html,php --bears=HTMLBear,PHPBear
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt; nl_info_dict = extract_info(args)
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt; nl_info_dict
+</span><span style="color:#a50">	{
+</span><span style="color:#a50">		&#34;file_name&#34;: html_php_file.html,
+</span><span style="color:#a50">		&#34;absolute_file_path&#34;: /home/test/html_php_file.html,
+</span><span style="color:#a50">		&#34;languages&#34;: [html, php]
+</span><span style="color:#a50">		&#34;bears&#34;: [HTMLBear, PHPBear]
+</span><span style="color:#a50">		&#34;language_bear_dict&#34;: language_bear_dict
+</span><span style="color:#a50">		&#34;arg_dict&#34;: arg_dict
+</span><span style="color:#a50">	}
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt; nl_info_dict[&#39;language_bear_dict&#39;]
+</span><span style="color:#a50">	{
+</span><span style="color:#a50">		&#34;html&#34;: [HTMLBear],
+</span><span style="color:#a50">		&#34;php&#34; : [PHPBear]
+</span><span style="color:#a50">	}
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt; nl_info_dict[&#39;arg_dict&#39;]
+</span><span style="color:#a50">	{
+</span><span style="color:#a50">		&#34;nl.html&#34;:	{&#34;file_name&#34;: &#34;temp_html_file&#34;,
+</span><span style="color:#a50">				&#34;bears&#34;: &#39;HTMLBear&#39;,
+</span><span style="color:#a50">				&#34;settings&#34;: [(setting,value)]
+</span><span style="color:#a50">				}
+</span><span style="color:#a50">		
+</span><span style="color:#a50">		
+</span><span style="color:#a50">		&#34;nl.php&#34;: 	{&#34;file_name&#34;: &#34;temp_php_file&#34;,
+</span><span style="color:#a50">				&#34;bears&#34;: &#39;PHPBear&#39;,
+</span><span style="color:#a50">				&#34;settings&#34;: [(setting,value)]
+</span><span style="color:#a50">				}
+</span><span style="color:#a50">
+</span><span style="color:#a50">	}
+</span><span style="color:#a50">
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+
+<span style="color:#00a">def</span> <span style="color:#0a0">get_lang_info</span>(args):
+	<span style="color:#a50">&#34;&#34;&#34;Return a list of langauges present in the nested file&#34;&#34;&#34;</span>
+
+<span style="color:#00a">def</span> <span style="color:#0a0">get_bear_info</span>(args):
+	<span style="color:#a50">&#34;&#34;&#34;Return the list of bears to be run on the file&#34;&#34;&#34;</span>
+
+<span style="color:#00a">def</span> <span style="color:#0a0">get_file_info</span>(args):
+	<span style="color:#a50">&#34;&#34;&#34;Returns the list of files to be linted&#34;&#34;&#34;</span>
+
+<span style="color:#00a">def</span> <span style="color:#0a0">get_absolute_file_path</span>(file_name):
+	<span style="color:#a50">&#34;&#34;&#34;Returns the absolute file path of eacg file&#34;&#34;&#34;</span>
+
+<span style="color:#00a">def</span> <span style="color:#0a0">get_language_bear_dict</span>(languages, bears):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Return a language_bear dict, where each language is mapped to a set of bears
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+
+<span style="color:#00a">def</span> <span style="color:#0a0">get_argument_dict</span>(file_list, language_bear_dict, settings):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Returns a argument_dict, where each temp_file is mapped to a set of
+</span><span style="color:#a50">	arguments.
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+
+</code></pre></div><p>different <code>nl_sections</code> and creating temporary files for each nested languages,
+which would contain the snippets of that language from the original nested file.</p>
+<p>This phase uses the <code>Parser</code> and the <code>NlFileHandler</code> parts of the architecture.</p>
+<h2 id="phase-2-segregation-of-nested-file">Phase 2: Segregation of Nested File</h2>
+<h3 id="parser">Parser</h3>
+<ul>
+<li>
+<p>Parser is responsible for splitting the original file into different
+<code>nl_sections</code>.</p>
+</li>
+<li>
+<p>The input and output to the parser is <strong>standardized</strong>, where the input to the
+parser are the contents of the original nested file and the output is the list
+of nl_sections encompassing the snippets of different programming language.</p>
+</li>
+<li>
+<p>Standardizing the parser helps us in removing any restriction on how a parser
+should parse the contents. A parser can also use third party API&rsquo;s as long as
+the output from it is in accordance with the format of a nl_sections.</p>
+</li>
+<li>
+<p>Since different combination of languages would need different parsers, we
+would create a new folder at <code>nestedlib/parsers</code> which would host the collection
+of all the parsers.</p>
+</li>
+<li>
+<p>A new super class called as <code>Parser</code> would be created. This would have all the
+common methods that all the parser might need. All the parser would be derived
+from this Superclass.</p>
+</li>
+</ul>
+<h3 id="parserpy-prototype">Parser.py Prototype</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">coalib.nestedlib.NlSection</span>
+
+<span style="color:#00a">class</span> <span style="color:#0a0;text-decoration:underline">Parser</span>:
+
+	<span style="color:#00a">def</span> <span style="color:#0a0">parse</span>(file_contents):
+		<span style="color:#a50">&#39;&#39;&#39;
+</span><span style="color:#a50">		Returns a list of nl_sections.
+</span><span style="color:#a50">
+</span><span style="color:#a50">		:param file_contents: The contents of the original nested file
+</span><span style="color:#a50">
+</span><span style="color:#a50">		&gt;&gt;&gt; file_contents = </span><span style="color:#a50">\
+</span><span style="color:#a50"></span><span style="color:#a50">				&#34;&#34;&#34;
+</span><span style="color:#a50">				&lt;!DOCTYPE html&gt;
+</span><span style="color:#a50">	 			&lt;head&gt;
+</span><span style="color:#a50">				&lt;title&gt;Hello world as text&lt;/title&gt;
+</span><span style="color:#a50">				&lt;?php
+</span><span style="color:#a50">					echo &#34;&lt;p&gt;Hello world&lt;/p&gt;&#34;;
+</span><span style="color:#a50">				?&gt;
+</span><span style="color:#a50">				&lt;/html&gt;
+</span><span style="color:#a50">				&#34;&#34;&#34;
+</span><span style="color:#a50">
+</span><span style="color:#a50">		&gt;&gt;&gt; p = Parser()
+</span><span style="color:#a50">		&gt;&gt;&gt; nl_sections = p.parse(file_contents)
+</span><span style="color:#a50">		&gt;&gt;&gt; nl_sections
+</span><span style="color:#a50">		(	&lt;NlSection object(index=1, language=html, orig_start=1, orig_end=3)&gt;,
+</span><span style="color:#a50">			&lt;NlSection object(index=2, language=php, orig_start=4, orig_end=6)&gt;,
+</span><span style="color:#a50">			&lt;NlSection object(index=3, language=html, orig_start=7, orig_end=7)&gt;
+</span><span style="color:#a50">		)
+</span><span style="color:#a50">		&#39;&#39;&#39;</span>
+
+	<span style="color:#00a">def</span> <span style="color:#0a0">detect_language</span>(<span style="color:#0aa">str</span>):
+		<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">		Return the language of the particulat string.
+</span><span style="color:#a50">
+</span><span style="color:#a50">		This will be overridden by the child class
+</span><span style="color:#a50">		&#34;&#34;&#34;</span>
+
+	<span style="color:#00a">def</span> <span style="color:#0a0">create_nl_section</span>(start, end, language, index):
+		<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">		Creates a NlSection Object from the values.
+</span><span style="color:#a50">
+</span><span style="color:#a50">		Returns the NlSection object
+</span><span style="color:#a50">		&#34;&#34;&#34;</span>
+
+		<span style="color:#00a">return</span> NlSection.from_values(start=start, end=end, language=language,
+					     index=index)
+
+</code></pre></div><h3 id="making-temporary-files">Making temporary files</h3>
+<p>This sections deals with how the segregated section (nl_sections) from the
+parser are combined to form different temporary files on which linting
+will be done.</p>
+<p><code>NlFileHandler</code> is responsible to create the temporary files. These temporary
+files are stored in the memory.</p>
+<ol>
+<li>
+<p>The nl_sections are passed to NlFileHandler.</p>
+</li>
+<li>
+<p>NlFileHander then creates a <code>nl_file_dict</code>, where the key is the name of
+the temporary file and the contents are it&rsquo;s value. It is similar to the
+<code>file_dict</code> that is created by coala in <code>instantiate_process()</code> during the
+execution of the section.</p>
+</li>
+<li>
+<p>It is important to keep in mind, that the temporary segregated file are not
+actually present in the folder. In the normal flow of coala,during the execution
+of the coala sections, coala will try to find the files by the filenames
+mentioned in the coala section. And then create a <code>file_dict</code>.
+That cannot happen in our case. So we will explicitly replace the <code>file_dict</code>
+with <code>nl_file_dict</code>.</p>
+</li>
+</ol>
+<h3 id="nlfilehandlerpy-prototype">NlFileHandler.py Prototype</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">def</span> <span style="color:#0a0">get_nl_file_dict</span>(nl_file_info, nl_sections):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Returns a nl_file_dict, where the key is the name of the temporary file
+</span><span style="color:#a50">	and the value is the contents of that file.
+</span><span style="color:#a50">
+</span><span style="color:#a50">	:param nl_file_info:	The information extracted from the arguments.
+</span><span style="color:#a50">				This is generated by the NlInfoExtractor.
+</span><span style="color:#a50">	:param nl_sections:	The segregated sections of the original file.
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt; nl_file_info
+</span><span style="color:#a50">	{
+</span><span style="color:#a50">		&#34;file_name&#34;: html_php_file.html,
+</span><span style="color:#a50">		&#34;absolute_file_path&#34;: /home/test/html_php_file.html,
+</span><span style="color:#a50">		&#34;languages&#34;: [html, php]
+</span><span style="color:#a50">		&#34;bears&#34;: [HTMLBear, PHPBear]
+</span><span style="color:#a50">		&#34;language_bear_dict&#34;: language_bear_dict
+</span><span style="color:#a50">		&#34;arg_dict&#34;: arg_dict
+</span><span style="color:#a50">	}
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt; nl_sections
+</span><span style="color:#a50">	(	&lt;NlSection object(index=1, language=html, orig_start=1, orig_end=3)&gt;,
+</span><span style="color:#a50">		&lt;NlSection object(index=2, language=php, orig_start=4, orig_end=6)&gt;,
+</span><span style="color:#a50">		&lt;NlSection object(index=3, language=html, orig_start=7, orig_end=7)&gt;
+</span><span style="color:#a50">	)
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt; file_contents = get_file(nl_file_info[&#39;file_name&#39;])
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt; file_contents = </span><span style="color:#a50">\
+</span><span style="color:#a50"></span><span style="color:#a50">			&#39;&#39;&#39;
+</span><span style="color:#a50">			&lt;!DOCTYPE html&gt;
+</span><span style="color:#a50"> 			&lt;head&gt;
+</span><span style="color:#a50">			&lt;title&gt;Hello world as text&lt;/title&gt;
+</span><span style="color:#a50">			&lt;?php
+</span><span style="color:#a50">				echo &#34;&lt;p&gt;Hello world&lt;/p&gt;&#34;;
+</span><span style="color:#a50">			?&gt;
+</span><span style="color:#a50">			&lt;/html&gt;
+</span><span style="color:#a50">			&#39;&#39;&#39;
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt; nl_file_dict = get_nl_file_dict(nl_file_info, nl_sections)
+</span><span style="color:#a50">	&gt;&gt;&gt; nl_file_dict
+</span><span style="color:#a50">	{
+</span><span style="color:#a50">		&#34;temp_html_file&#34;:(&#39;&#39;&#39;&lt;!DOCTYPE html&gt;</span><span style="color:#a50">\n</span><span style="color:#a50">
+</span><span style="color:#a50">				&lt;head&gt;</span><span style="color:#a50">\n</span><span style="color:#a50"> 
+</span><span style="color:#a50">				&lt;title&gt;Hello world as text&lt;/title&gt;</span><span style="color:#a50">\n</span><span style="color:#a50"> 
+</span><span style="color:#a50">				</span><span style="color:#a50">\n</span><span style="color:#a50">
+</span><span style="color:#a50">				</span><span style="color:#a50">\n</span><span style="color:#a50"> 		
+</span><span style="color:#a50">				</span><span style="color:#a50">\n</span><span style="color:#a50">  
+</span><span style="color:#a50">				&lt;/html&gt;&#39;&#39;&#39;),
+</span><span style="color:#a50">
+</span><span style="color:#a50">		&#34;temp_php_file&#34;:(&#39;&#39;&#39;</span><span style="color:#a50">\n</span><span style="color:#a50">
+</span><span style="color:#a50">				</span><span style="color:#a50">\n</span><span style="color:#a50">
+</span><span style="color:#a50">				</span><span style="color:#a50">\n</span><span style="color:#a50">
+</span><span style="color:#a50">				</span><span style="color:#a50">\t\t</span><span style="color:#a50">&lt;?php</span><span style="color:#a50">\n</span><span style="color:#a50">
+</span><span style="color:#a50">				</span><span style="color:#a50">\t\t\t</span><span style="color:#a50">echo &#34;&lt;p&gt;Hello world&lt;/p&gt;&#34;;</span><span style="color:#a50">\n</span><span style="color:#a50">
+</span><span style="color:#a50">				</span><span style="color:#a50">\t</span><span style="color:#a50">?&gt;&#39;&#39;&#39;)
+</span><span style="color:#a50">
+</span><span style="color:#a50">
+</span><span style="color:#a50">	}
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+
+<span style="color:#00a">def</span> <span style="color:#0a0">get_file_contents</span>(file_name):
+	<span style="color:#a50">&#34;&#34;&#34; Returns the contents of the file&#34;&#34;&#34;</span>
+
+<span style="color:#00a">def</span> <span style="color:#0a0">assemble</span>(nl_diff_dict, nl_sections, nl_info_dict):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Assembles the temporary files. 
+</span><span style="color:#a50">
+</span><span style="color:#a50">	The sections are extracted by their increasing order of their index and 
+</span><span style="color:#a50">	then written directly to the original file.
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+	<span style="color:#0aa">file</span> = <span style="color:#0aa">open</span>(nl_info_dict[<span style="color:#a50">&#39;absolute_file_path&#39;</span>], <span style="color:#a50">&#39;w&#39;</span>)
+
+	<span style="color:#00a">for</span> nl_section <span style="color:#00a">in</span> <span style="color:#0aa">sorted</span>(nl_sections.index):
+		temp_file_name = nl_section.temp_file
+		start = nl_section.linted_start
+		end = nl_section.linted_end
+		linted_file_content = nl_diff_dict[temp_file_name]
+
+		section_content = get_file_content(linted_file_content, start, end)
+
+		<span style="color:#0aa">file</span>.write(section_content)
+
+
+</code></pre></div><h2 id="phase-3-linting-the-file">Phase 3: Linting the file</h2>
+<p>This phase deals with linting the temporary files created by the NlFileHandler using
+the <code>nl_sections</code>.</p>
+<ol>
+<li>
+<p>In coala the linting of the files are done when the section created by coala
+are executed.</p>
+</li>
+<li>
+<p>Since we are explicitly making the sections for nested languages, care has been
+taken to keep the file names of the <code>nl.lang</code> section and the file names
+in <code>nl_file_dict</code>  same.</p>
+</li>
+<li>
+<p>During the execution of the section, in the <code>instantiate_process()</code> we do not
+access the physical file, rather we replace the <code>file_dict</code> with <code>nl_file_dict</code>
+and make the necessary changes.</p>
+</li>
+<li>
+<p>Once the <code>file_dict</code> is changed, coala will normally continue the process.
+To coala, it now looks as if the <code>temporary files</code> were actually present in the
+physical drive. And the linting starts</p>
+</li>
+</ol>
+<h3 id="applying-the-patches">Applying the Patches</h3>
+<p>Whenever the bears suggests a patch and the user desires to apply the Patch, we
+would also need to update the information of the <code>linted_start</code> and
+<code>linted_end</code>. This needs to be done because, whenever a patch is applied the
+position of the lines might change because of addition and deletion of lines.</p>
+<p>Keeping track of the start and end of a particular <code>nl_section</code> in the linted
+files would help in easier extraction of the <code>nl_section</code> from the temporary
+created files.</p>
+<p>In order to do so, we&rsquo;ll have to make changes to the <code>apply()</code> method of
+the <code>ApplyAction</code>. We use the <code>update_nl_sections()</code> functions to update
+the values.</p>
+<p>In <code>Diff.py</code> we add a new function <code>get_diff_info()</code> that would give us the
+information of the diff</p>
+<h4 id="diffpy">Diff.py</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">def</span> <span style="color:#0a0">get_diff_info</span>():
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Returns tuple containing line numbers of deleted,changed and added lines.
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+	deleted_lines = []
+	added_lines = []
+	changed_lines = []
+
+	<span style="color:#00a">for</span> line_nr <span style="color:#00a">in</span> self._changes:
+		line_diff = self._changes[line_nr]
+
+		<span style="color:#00a">if</span> line_diff.change:
+			changed_lines.append(line_nr)
+		<span style="color:#00a">elif</span> line_diff.delete:
+			deleted_lines.append(line_nr)
+		<span style="color:#00a">if</span> line_diff.add_after:
+			added_lines.append(line_nr)
+
+	<span style="color:#00a">return</span> changed_lines, deleted_lines, added_lines
+</code></pre></div><h3 id="nlcorepy">NLCore.py</h3>
+<p>The following method belongs to the NlCore</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">from</span> <span style="color:#0aa;text-decoration:underline">coalib.result_action.Diff</span> <span style="color:#00a">import</span> stats,get_diff_info
+
+diff_stats = stats()
+diff_info = get_diff_info()
+
+<span style="color:#00a">def</span> <span style="color:#0a0">find_section_index</span>(diff_stats, diff_info, nl_sections):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Returns the section index to which the patch is about to be applied.
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+
+	<span style="color:#00a">return</span> index
+
+<span style="color:#00a">def</span> <span style="color:#0a0">update_nl_sections</span>(diff_stats, diff_info, nl_sections):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Updates the `linted_start` and the `linted_end` of the nl_sections 
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+
+	index = find_section_index(diff_stats, diff_info, nl_sections)
+
+	<span style="color:#00a">for</span> nl_sections <span style="color:#00a">in</span> nl_sections:
+		<span style="color:#00a">if</span> nl_section.index == index:
+			<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">			Update the values of linted_start` and the `linted_end`
+</span><span style="color:#a50">			&#34;&#34;&#34;</span>
+
+</code></pre></div><h2 id="phase-4-assembling">Phase 4: Assembling</h2>
+<p>This phase deals with assembling the linted temporary files back into the
+original file.</p>
+<p>This phase has two parts:</p>
+<ol>
+<li>Extracting the sections from the linted temporary files.</li>
+<li>Assembling these sections.</li>
+</ol>
+<p>Once all the coala sections have been executed, we have a <code>nl_diff_dict</code> where
+the key is the name of the temporary file and the value is the contents of the
+linted file contents of the temporary file.</p>
+<p>We have a <code>assemble()</code> method inside the NlFileHandler, which uses
+the information from the <code>nl_sections</code> and extracts the sections from the
+<code>nl_diff_dict</code> and write it to the original file</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">def</span> <span style="color:#0a0">assemble</span>(nl_diff_dict, nl_sections, nl_info_dict):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Assembles the temporary files. 
+</span><span style="color:#a50">
+</span><span style="color:#a50">	The sections are extracted by their increasing order of their index and 
+</span><span style="color:#a50">	then written directly to the original file.
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+	<span style="color:#0aa">file</span> = <span style="color:#0aa">open</span>(nl_info_dict[<span style="color:#a50">&#39;absolute_file_path&#39;</span>], <span style="color:#a50">&#39;w&#39;</span>)
+
+	<span style="color:#00a">for</span> nl_section <span style="color:#00a">in</span> <span style="color:#0aa">sorted</span>(nl_sections.index):
+		temp_file_name = nl_section.temp_file
+		start = nl_section.linted_start
+		end = nl_section.linted_end
+		linted_file_content = nl_diff_dict[temp_file_name]
+
+		section_content = get_file_content(linted_file_content, start, end)
+
+		<span style="color:#0aa">file</span>.write(section_content)
+
+</code></pre></div><h2 id="nlcorepy-prototype">NlCore.py Prototype</h2>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">from</span> <span style="color:#0aa;text-decoration:underline">coalib.nestedlib.NlInfoExtractor</span> <span style="color:#00a">import</span> extract_info
+<span style="color:#00a">from</span> <span style="color:#0aa;text-decoration:underline">coalib.result_action.Diff</span> <span style="color:#00a">import</span> stats,get_diff_info
+<span style="color:#00a">from</span> <span style="color:#0aa;text-decoration:underline">coalib.nestedlib.NlFileHandler</span> <span style="color:#00a">import</span> get_file_contents, get_nl_file_dict, assemble
+
+<span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">coalib.nestedlib.Parser</span>
+
+<span style="color:#00a">def</span> <span style="color:#0a0">get_arg_info</span>(arg):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Return argument list and nl_info_dict that  will be used to make 
+</span><span style="color:#a50">	the coala sections
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&gt;&gt;&gt; arg_list = get_arg_list(arg)
+</span><span style="color:#a50">	[ ( (file, temp_html_file), (bears, HTMLBear ), (settings, value) ),
+</span><span style="color:#a50">	  ( (file, temp_php_file), (bears, PHPBear ), (settings, value) )
+</span><span style="color:#a50">	]
+</span><span style="color:#a50">
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+	nl_info_dict = extract_info(arg)
+	arg_list = make_arg_list(nl_info_dict)
+
+	<span style="color:#00a">return</span> nl_info_dict, arg_list
+
+<span style="color:#00a">def</span> <span style="color:#0a0">get_file_metadata</span>(nl_info_dict):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Returns the nl_sections and nl_file_dict
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+
+	parser = detect_parser(nl_info_dict[<span style="color:#a50">&#39;languages&#39;</span>])
+	file_contents = get_file_contents(nl_info_dict[<span style="color:#a50">&#39;absolute_file_path&#39;</span>])
+
+	index = find_section_index(diff_stats, diff_info, nl_sections)
+
+	<span style="color:#00a">for</span> nl_sections <span style="color:#00a">in</span> nl_sections:
+		<span style="color:#00a">if</span> nl_section.index == index:
+			<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">			Update the values of linted_start` and the `linted_end`
+</span><span style="color:#a50">			&#34;&#34;&#34;</span>
+
+
+<span style="color:#00a">def</span> <span style="color:#0a0">assemble_files</span>(nl_diff_dict, nl_sections, nl_info_dict):
+	<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">	Assembles the file and returns back to coala_main
+</span><span style="color:#a50">	&#34;&#34;&#34;</span>
+
+	<span style="color:#00a">return</span> assemble(nl_diff_dict, nl_sections, nl_info_dict)
+
+</code></pre></div><h2 id="changes-in-coalapy">Changes in coala.py</h2>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">coalib.nestedlib.Nlcore</span>
+<span style="color:#00a">def</span> <span style="color:#0a0">main</span>(debug=False):
+	configure_logging()
+	handle_nested = True
+
+	args = None 	<span style="color:#aaa;font-style:italic"># to have args variable in except block </span>
+					<span style="color:#aaa;font-style:italic">#  when parse_args fails</span>
+	<span style="color:#00a">try</span>:
+		args = default_arg_parser().parse_args()
+		<span style="color:#00a">if</span> args.handle_nested:
+			nl_info_dict, nl_arg_dict = get_arg_info(args)
+			nl_sections, nl_file_dict = get_file_metadata(nl_info_dict)
+
+		<span style="color:#a50">&#34;&#34;&#34;
+</span><span style="color:#a50">		
+</span><span style="color:#a50">		Code Contents of of coala.py
+</span><span style="color:#a50">
+</span><span style="color:#a50">		&#34;&#34;&#34;</span>
+
+	<span style="color:#00a">return</span> mode_normal(console_printer, None, args, debug=debug, 
+			handle_nested, nl_info_dict, nl_arg_dict, 
+			nl_sections, nl_file_dict)
+
+</code></pre></div><hr>
+<p>That&rsquo;s it for now folk. Will update you soon as soon as I complete all my
+tasks of Coding Phase 1. All the best to me :grimacing:</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Naveen" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Hiyo Homospaien o/</p>
+      
+      
+      
+        
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+  </body>
+
+</html>
