@@ -1,7 +1,7 @@
 
 # Bio
 
-Hello, Homosapein! 
+Hello, Homosapein!! 
 
 I'm Naveen. Welcome to my tiny little space on the web :)
 
