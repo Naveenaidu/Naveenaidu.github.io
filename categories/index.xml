@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Naveenaidu</title>
+    <link>https://naveenaidu.github.io/categories/</link>
+    <description>Recent content in Categories on Naveenaidu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Sep 2019 16:30:06 +0530</lastBuildDate>
+    
+	<atom:link href="https://naveenaidu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>journal</title>
+      <link>https://naveenaidu.github.io/categories/journal/</link>
+      <pubDate>Wed, 18 Sep 2019 16:30:06 +0530</pubDate>
+      
+      <guid>https://naveenaidu.github.io/categories/journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gsoc-2019</title>
+      <link>https://naveenaidu.github.io/categories/gsoc-2019/</link>
+      <pubDate>Fri, 30 Aug 2019 16:30:06 +0530</pubDate>
+      
+      <guid>https://naveenaidu.github.io/categories/gsoc-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>omp-2019</title>
+      <link>https://naveenaidu.github.io/categories/omp-2019/</link>
+      <pubDate>Fri, 02 Aug 2019 16:30:06 +0530</pubDate>
+      
+      <guid>https://naveenaidu.github.io/categories/omp-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>misc</title>
+      <link>https://naveenaidu.github.io/categories/misc/</link>
+      <pubDate>Sat, 20 Apr 2019 16:30:06 +0530</pubDate>
+      
+      <guid>https://naveenaidu.github.io/categories/misc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

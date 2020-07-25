@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Naveen Naidu">
+    <meta name="description" content="Hiya Everyone!!
+This post will explain in brief about the work I had done during the Google Summer of Code 2019 with coala. For the unitiated, my project was to give coala the capability to handle nested programming language in a single file.
+ The Official link to the project is here My Proposal for the project is here  I must say, there is a huge contrast between the project proposal I submitted and the actual implementation.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GSOC: Handle Nested Languages Overview"/>
+<meta name="twitter:description" content="Hiya Everyone!!
+This post will explain in brief about the work I had done during the Google Summer of Code 2019 with coala. For the unitiated, my project was to give coala the capability to handle nested programming language in a single file.
+ The Official link to the project is here My Proposal for the project is here  I must say, there is a huge contrast between the project proposal I submitted and the actual implementation."/>
+
+    <meta property="og:title" content="GSOC: Handle Nested Languages Overview" />
+<meta property="og:description" content="Hiya Everyone!!
+This post will explain in brief about the work I had done during the Google Summer of Code 2019 with coala. For the unitiated, my project was to give coala the capability to handle nested programming language in a single file.
+ The Official link to the project is here My Proposal for the project is here  I must say, there is a huge contrast between the project proposal I submitted and the actual implementation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naveenaidu.github.io/posts/gsoc-final-phase/" />
+<meta property="article:published_time" content="2019-08-30T16:30:06+05:30" />
+<meta property="article:modified_time" content="2019-08-30T16:30:06+05:30" />
+
+
+    
+      <base href="https://naveenaidu.github.io/posts/gsoc-final-phase/">
+    
+    <title>
+  GSOC: Handle Nested Languages Overview · Naveenaidu
+</title>
+
+    
+      <link rel="canonical" href="https://naveenaidu.github.io/posts/gsoc-final-phase/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://naveenaidu.github.io/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://naveenaidu.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://naveenaidu.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://naveenaidu.github.io/">
+      Naveenaidu
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://naveenaidu.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://naveenaidu.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://naveenaidu.github.io/projects/">Projects</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">GSOC: Handle Nested Languages Overview</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2019-08-30T16:30:06&#43;05:30'>
+                August 30, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              8-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://naveenaidu.github.io/categories/gsoc-2019/">gsoc-2019</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Hiya Everyone!!</p>
+<p>This post will explain in brief about the work I had done during the Google
+Summer of Code 2019 with <a href="https://coala.io/#/home?lang=Python">coala</a>. For the
+unitiated, my project was to give coala the capability to handle nested
+programming language in a single file.</p>
+<ul>
+<li>The Official link to the project is <a href="https://summerofcode.withgoogle.com/projects/#5842650266075136">here</a></li>
+<li>My Proposal for the project is <a href="https://docs.google.com/document/d/1lVfE4f2jLzYBKyuxYOpx9G8Gsvil4rV4nWeebtwX8Rg/edit?usp=sharing">here</a></li>
+</ul>
+<p>I must say, there is a huge contrast between the project proposal I submitted
+and the actual implementation. Though the core concept remains the same but
+the implemenation of the various parts are a little different.</p>
+<p><strong>Please do note that this project currently only support the combination
+of files having Python and Jinja2. Work is in progress to support other
+languages.</strong></p>
+<p>So let&rsquo;s dive in to the project and see what all has been done :D</p>
+<hr>
+<h2 id="for-the-enthusiast">For the enthusiast</h2>
+<p>This is for the people who are really interested and want to try this feature(
+<em>I know which most of you aren&rsquo;t xD</em>). Follow the below steps:</p>
+<p><strong>NOTE: Switch on your virtual env, if you don&rsquo;t want your working coala be
+disturpted by this feature from hell xD(reviews are left to be done on this
+feature)</strong></p>
+<ol>
+<li>Clone <a href="https://github.com/Naveenaidu/coala/tree/gsoc-master-handle-nested">Naveenaidu/coala</a>
+repository</li>
+<li>cd into the directory <code>coala</code></li>
+<li>Run <code>pip install -r requirement.txt</code></li>
+<li>Install coala using <code>pip3 install -e .</code></li>
+</ol>
+<p>Once you have followed the above steps, you now have coala with the feature of
+handling nested languages. If you aren&rsquo;t bored already go on to the next section
+to find out how you can use this awesome featureee(Shameless praising of
+oneself xD)</p>
+<h2 id="how-to-activate-nested-language-mode">How to activate Nested Language Mode</h2>
+<p>Use the following file to test this mode:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+		<span style="color:#00a">def</span> <span style="color:#0a0">hello</span>():
+	{% raw %}{%<span style="color:#0aa">set</span> x=<span style="color:#a50">&#39;thanos&#39;</span>%} {{var}} <span style="color:#00a">print</span>(  <span style="color:#a50">&#34;yo!!&#34;</span>) {%<span style="color:#0aa">set</span> y=<span style="color:#a50">&#39;he rocks&#39;</span>%}
+	{% endraw %}
+
+<span style="color:#00a">print</span>(<span style="color:#a50">&#34;Holaaa Amigos&#34;</span>        )
+</code></pre></div><p>Save the above snippet in a file <code>test.py</code>. We&rsquo;ll now go ahead and run
+<code>PEP8Bear</code>, <code>Jinja2Bear</code> and <code>SpaceConsistencyBear</code> upon the file.</p>
+<p>You can do that by using:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> coala --handle-nested --languages=python,jinja2 --files=test.py.jj2
+--bears=PEP8Bear,Jinja2Bear,SpaceConsistencyBear
+</code></pre></div><p>And tada!!! You&rsquo;ll be prompted by coala to fix the patches as it usually does
+in normal execution.</p>
+<p>The argument <code>--handle-nested</code> is used to specify that the files has a combination
+of nested languages. The argument <code>--languages</code> is to mention the languages that
+exists in the files. Note that, it is important to mention the <code>--languages</code>
+argument since coala cannot auto detect the languages present in the nested
+language file.</p>
+<p>Also special care has been taken to keep the signicficant part of the core coala
+untounched by my implementation. No major changes have been done to the way
+coala works. This would help as this is still an experimental features and
+many changes are yet to come.</p>
+<p>An asciinema of the working is <a href="https://asciinema.org/a/263844">here</a></p>
+<hr>
+<h2 id="how-was-this-done-o_o--">How was this done O_O  ???</h2>
+<p>Whoo! So you do wanna jump along with Alice down the rabbit hole!! Noiceee&hellip;</p>
+<p>Let&rsquo;s go on in then.</p>
+<p>Before we go in lemme give you a very high level view of what happens behind the
+scenes.</p>
+<p>A source file containing multiple programming languages is loaded up by coala. The original nested file is broken/split into n temporary files, where n is the number of languages present in the original file. Each temporary file only contains the snippets belonging to one language.</p>
+<p>These temporary files would then be passed to their respective language bears ( chosen by the user) where the static analysis routines would run. The temporary files after being linted would then be assembled.</p>
+<p>The above process creates the illusion that the original file is being linted, but in reality we divide the files into different parts and lint them one by one.</p>
+<p>The figure below, would help give a clear picture</p>
+<p><img src="https://naveenaidu.github.io/assets/images/4-gsoc-overview-nested-languages/high_level_view_handle_nested.jpg" alt="higher_level_view"></p>
+<p>Now&rsquo;s lets have a look at the different parts of the architecture shall we??</p>
+<h3 id="1-nlinfoextractor">1. NlInfoExtractor</h3>
+<p>NlInfoExtractor is responsible to parse in the cli arguments passed into the coala
+during the Nested Language Mode. It extracts all the information from the
+arguments that would help coala in future to properly lint the file.</p>
+<p>For eg: If the user passes the following arguments to coala</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">coala --handle-nested --languages=python,jinja2 --files=test.py,test2.py
+--bears=PEP8Bear,SpaceConsistencyBear,Jinja2Bear 
+--settings <span style="color:#a00">use_space</span>=True
+</code></pre></div><p>We can get the following information from the above arguments.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">{
+   <span style="color:#a50">&#39;bears&#39;</span>: [<span style="color:#a50">&#39;PEP8Bear&#39;</span>, <span style="color:#a50">&#39;SpaceConsistencyBear&#39;</span>, <span style="color:#a50">&#39;Jinja2Bear&#39;</span>],
+   <span style="color:#a50">&#39;files&#39;</span>: [<span style="color:#a50">&#39;test.py&#39;</span>, <span style="color:#a50">&#39;test2.py&#39;</span>],
+   <span style="color:#a50">&#39;lang_bear_dict&#39;</span>: {
+                       <span style="color:#a50">&#39;jinja2&#39;</span>: [<span style="color:#a50">&#39;Jinja2Bear&#39;</span>],
+                       <span style="color:#a50">&#39;python&#39;</span>: [<span style="color:#a50">&#39;PEP8Bear&#39;</span>, <span style="color:#a50">&#39;SpaceConsistencyBear&#39;</span>]
+                     },
+   <span style="color:#a50">&#39;languages&#39;</span>: [<span style="color:#a50">&#39;python&#39;</span>, <span style="color:#a50">&#39;jinja2&#39;</span>],
+   <span style="color:#a50">&#39;nl_file_info&#39;</span>: { <span style="color:#a50">&#39;test.py&#39;</span> : {
+                                   <span style="color:#a50">&#39;python&#39;</span> : <span style="color:#a50">&#39;test.py_nl_python&#39;</span>,
+                                   <span style="color:#a50">&#39;jinja2&#39;</span> : <span style="color:#a50">&#39;test.py_nl_jinja2&#39;</span>
+                                 },
+                     <span style="color:#a50">&#39;test2.py&#39;</span>: {
+                                   <span style="color:#a50">&#39;python&#39;</span> : <span style="color:#a50">&#39;test2.py_nl_python&#39;</span>,
+                                   <span style="color:#a50">&#39;jinja2&#39;</span> : <span style="color:#a50">&#39;test2.py_nl_jinja2&#39;</span>
+                                 }
+                   }
+}
+</code></pre></div><p>This information is then used to make the coala-sections. In more layman terms,
+coala-sections are basically the information passed to coala to inform about
+the type of files and the linters it needs to initialize for the linting of
+the file to take place.</p>
+<p>The implemenation for this can be found <a href="https://github.com/Naveenaidu/coala/blob/27fecf92474b1f5334469c29205fe501aeee04ba/coalib/nestedlib/NlInfoExtractor.py">here</a></p>
+<hr>
+<h3 id="2-nlcliparsing">2. NlCliParsing</h3>
+<p>NlCliParsing is responsible to create coala-sections from the information passed
+from the NlInfoExtractor.</p>
+<p>For eg: for the above argument list, it creates the following sections:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">files = test.py_nl_python
+bears = PEP8Bear,SpaceConsistencyBear
+handle_nested = True
+languages = python,jinja2
+file_lang = python
+orig_file_name = test.py
+</code></pre></div><p>Also it is important to note that we create one section for each temporary file.
+That means for the above arguments we will have 4 coala-sections one for each
+temporary file.</p>
+<p>The implemenation for this can be found <a href="https://github.com/Naveenaidu/coala/blob/20652070886c393f8c4962c2917469c83b46415a/coalib/nestedlib/NlCliParsing.py">here</a></p>
+<hr>
+<h3 id="3-parser">3. Parser</h3>
+<p>Parser is used to segragate the original file into the temporary files.</p>
+<p>Let&rsquo;s understand what this means:</p>
+<p>Suppose we have the following nested file which has both Jinja and Python.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">sys</span>
+<span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">thanos</span>
+
+x = <span style="color:#a50">&#34;hulk&#34;</span>
+
+{% raw %}{% <span style="color:#00a">if</span> x == <span style="color:#a50">&#34;hulk&#34;</span> %}
+	<span style="color:#00a">print</span>(<span style="color:#a50">&#34;Thanos is meat&#34;</span>) 
+{% <span style="color:#00a">else</span> %}
+	<span style="color:#00a">print</span>(<span style="color:#a50">&#34;Bhubyee! Earth&#34;</span>)
+{% endif %}{% endraw %}
+
+<span style="color:#00a">if</span>(y <span style="color:#00a">is</span> <span style="color:#00a">not</span> x):
+	<span style="color:#a50">&#34;Some gibberish&#34;</span>
+</code></pre></div><p>As you see in the above snippet - We have a mixture of <code>Python</code> and <code>Jinja</code>. And
+if we have to be able to lint these files seprately i.e if we have to convert
+the above file into <code>pure jinja</code> and <code>pure python</code> file, we would need to
+maintain the information about what lines belong to which language.</p>
+<p>We do this, by divinding the files into different section. I call these section
+<code>NlSection</code> which stand for <code>Nested language Section</code>.</p>
+<p>The above snippet can be divided into three sections:</p>
+<ol>
+<li><strong>Section 1</strong></li>
+</ol>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">sys</span>
+<span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">thanos</span>
+
+x = hulk
+
+</code></pre></div><ol start="2">
+<li><strong>Section 2</strong>
+{% raw %}</li>
+</ol>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{% if x == &#34;hulk&#34; %}
+	print(&#34;Thanos is meat&#34;) 
+{% else %}
+	print(&#34;Bhubyee! Earth&#34;)
+{% endif %}
+</code></pre></div><p>{% endraw %}</p>
+<ol start="3">
+<li><strong>Section 3</strong></li>
+</ol>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">if</span>(y <span style="color:#00a">is</span> <span style="color:#00a">not</span> x):
+	<span style="color:#00a">print</span>(<span style="color:#a50">&#34;Some gibberish&#34;</span>)
+</code></pre></div><p>Divinding the files into various sections, makes the work of linting the file
+easier. What we do after creating sections is that we group the sections on the
+basis of their language and then make <code>pure python</code> and a <code>pure jinja</code> file.
+These pure files would then be passed upon to the respective language bears.</p>
+<p><em>NOTE: Creating sections does mean that we create new sections rather I mean that
+we maintain the infromation such as the <code>line_start</code> and <code>line_end</code> in the
+original file.</em></p>
+<hr>
+<h3 id="4-nlsection">4. NlSection</h3>
+<p>Each of the section we made in the nested language file is termed as <code>NlSection</code>.
+A NlSection has the following information:</p>
+<ul>
+<li>Start line number of the section</li>
+<li>Start column number of the section</li>
+<li>End line number of the section</li>
+<li>End column number of the section</li>
+<li>The path of the nestedfile</li>
+</ul>
+<p>The start and end information of the sections are inturn a <code>NlSectionPosition</code>
+object.</p>
+<p>That means NlSection comprises of two object <code>start</code> and <code>end</code>, and these objects
+are of the type <code>NlSectionPosition</code>.</p>
+<p>NlSectionPosition has better functionality to store line numbers and column
+numbers along with proper testing.</p>
+<p>Implementation for NlSection is <a href="https://github.com/Naveenaidu/coala/commit/c42afec17773349d38b319a0c8a331f1cadaa013">here</a></p>
+<p>Implementation for NlSectionPosition is <a href="https://github.com/Naveenaidu/coala/commit/dd27757467bb3ef41b03dd076eecf60d792929a5">here</a></p>
+<hr>
+<h3 id="5-nlcore">5. NlCore</h3>
+<p>NlCore is the interface which connect the normal coala with this nested language
+mode. This helps us to keep both of them seperate. All the calls to the different
+parts of Nested language arhcitecture are made via the API&rsquo;s provided by this
+module.</p>
+<p>The implementation for this can be found <a href="https://github.com/Naveenaidu/coala/commit/04404d6785b2a56881ee5a6b56e69a3d9fae6082">here</a></p>
+<p>Anddd!! That&rsquo;s it folks. That covers up all the important parts that were used
+to make this possible. It&rsquo;s really a very high level view of what&rsquo;s actually
+been done. I didn&rsquo;t want to go into the details of each and every module because
+doing so would have gotten you really confused :P, But if you are interested,
+in knowing more about everything &ndash; Feel free to contact me :)</p>
+<hr>
+<h2 id="challenges">Challenges</h2>
+<p>The most challenging part of the project was to come up with a proper
+architecuture that would work. I must confess that I put in more than 2 month of
+time before GSoC to try out various possibilites that might make this project a
+reality. I am grateful to all the mentors of coala who kept reviewing my various
+approaches even with their busy schedule, without their insights I would never
+have been able to finalise on my proposal.</p>
+<p>Since this project deals with the core of the coala, I was pretty scared to get
+into the waters of the huge codebase. But with the constant support of mentors
+and as the time went on, I was about to understand how the different components
+of coala actually pieced together.</p>
+<p>Another difficult situation that I faced was during my Third Phase of GSoC.
+The approach I planned out for the assembling of the files did not seem to work.
+So I was supposed to come with a new approach in a span of 11 days. I was pretty
+pissed and scared ,but apparently it took lesser time than i expected, this
+taught me not overestimate the time and take things one at a time.</p>
+<p>And last not the least was about maintaining the coverage while implementing the
+details. It took me time to soak in all the coverage, but it all turned out to
+be good.</p>
+<p>The entire experience was really fun, though at times there were few hair
+plucking moment but this taught me a lot about how the architectures need to be
+made and how different components needs to be designed to keep track of
+scalability.</p>
+<p>I&rsquo;m also write in another post sharing about my experience in another post.
+Until then!! Naveen is signing offf. Bhubyeee</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Naveen" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Hiyo Homospaien o/</p>
+      
+      
+      
+        
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+  </body>
+
+</html>

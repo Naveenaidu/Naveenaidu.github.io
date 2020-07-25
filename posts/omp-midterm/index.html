@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Naveen Naidu">
+    <meta name="description" content="Heya Everyone,
+This post is dedicated for my work done until now at Open Mainframe Project. For the unititated, I got selected for the Open Mainframe Project as an intern for the project Implementation of Boost.Context Module on s390x&quot;.
+What are all the weird terms on the above line? I promise you that I&rsquo;ll explain all of the above term in details, when I do get some free time. For now, I&rsquo;ll restrict myself to descrbing these terms in as simple manner as I can.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="OMP: MidTerm Overview"/>
+<meta name="twitter:description" content="Heya Everyone,
+This post is dedicated for my work done until now at Open Mainframe Project. For the unititated, I got selected for the Open Mainframe Project as an intern for the project Implementation of Boost.Context Module on s390x&quot;.
+What are all the weird terms on the above line? I promise you that I&rsquo;ll explain all of the above term in details, when I do get some free time. For now, I&rsquo;ll restrict myself to descrbing these terms in as simple manner as I can."/>
+
+    <meta property="og:title" content="OMP: MidTerm Overview" />
+<meta property="og:description" content="Heya Everyone,
+This post is dedicated for my work done until now at Open Mainframe Project. For the unititated, I got selected for the Open Mainframe Project as an intern for the project Implementation of Boost.Context Module on s390x&quot;.
+What are all the weird terms on the above line? I promise you that I&rsquo;ll explain all of the above term in details, when I do get some free time. For now, I&rsquo;ll restrict myself to descrbing these terms in as simple manner as I can." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naveenaidu.github.io/posts/omp-midterm/" />
+<meta property="article:published_time" content="2019-08-02T16:30:06+05:30" />
+<meta property="article:modified_time" content="2019-08-02T16:30:06+05:30" />
+
+
+    
+      <base href="https://naveenaidu.github.io/posts/omp-midterm/">
+    
+    <title>
+  OMP: MidTerm Overview · Naveenaidu
+</title>
+
+    
+      <link rel="canonical" href="https://naveenaidu.github.io/posts/omp-midterm/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://naveenaidu.github.io/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://naveenaidu.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://naveenaidu.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://naveenaidu.github.io/">
+      Naveenaidu
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://naveenaidu.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://naveenaidu.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://naveenaidu.github.io/projects/">Projects</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">OMP: MidTerm Overview</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2019-08-02T16:30:06&#43;05:30'>
+                August 2, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://naveenaidu.github.io/categories/omp-2019/">omp-2019</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Heya Everyone,</p>
+<p>This post is dedicated for my work done until now at Open Mainframe Project. For
+the unititated, I got selected for the Open Mainframe Project as an intern
+for the project <code>Implementation of Boost.Context Module on s390x&quot;.</code></p>
+<h2 id="what-are-all-the-weird-terms-on-the-above-line">What are all the weird terms on the above line?</h2>
+<p>I promise you that I&rsquo;ll explain all of the above term in details, when I do get
+some free time. For now, I&rsquo;ll restrict myself to descrbing these terms in as
+simple manner as I can.</p>
+<h3 id="boost">Boost</h3>
+<p>The C++ programmers would be accustomed to what Boost is. Please do correct me
+if I make any mistaked here :P</p>
+<p>So Boost is a set of libraries for the C++ programming language that provide
+support for tasks and structures such as linear algebra, pseudorandom number
+generation, multithreading, image processing, regular expressions, and unit
+testing.</p>
+<h3 id="boostcontext">Boost.Context</h3>
+<p>Context is one of the multitasking library of the Boost. <code>boost.context</code> is a
+foundational library that provides a sort of cooperative multitasking on a
+single thread. It provides the means to suspend the current execution path and
+to transfer the control, thereby permitting another function/fiber to run
+on the current thread.</p>
+<p>These aim to provide the same functionality that <code>yield</code> keyword provides in
+python. In more layman words, It provides the programmer the means to jump
+from one function to another at his will.</p>
+<p>That means, if you have two functions:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#0aa">void</span> <span style="color:#0a0">f1</span>(){
+	print(<span style="color:#a50">&#34;f1 : Line 1</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>);
+	print(<span style="color:#a50">&#34;f1 : Line 2</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>);
+	print(<span style="color:#a50">&#34;f1 : Line 3</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>);
+
+	jump(f2)
+
+	print(<span style="color:#a50">&#34;</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>)
+	print(<span style="color:#a50">&#34;f1 : Line 4</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>);
+	print(<span style="color:#a50">&#34;f1 : Line 5</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>);
+}
+</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#0aa">void</span> <span style="color:#0a0">f2</span>(){
+	print(<span style="color:#a50">&#34;</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>)
+	print(<span style="color:#a50">&#34;f2 : Line 1</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>);
+	print(<span style="color:#a50">&#34;f2 : Line 2</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>);
+
+	jump(f1)
+
+	print(<span style="color:#a50">&#34;f2 : Line 4</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>);
+	print(<span style="color:#a50">&#34;f2 : Line 5</span><span style="color:#a50">\n</span><span style="color:#a50">&#34;</span>);
+}
+</code></pre></div><p>To maintain the sanity of the users, let&rsquo;s assume that <code>boost.context</code> has a
+function called as  <code>jump</code> which allows user to shift from one function to
+another.</p>
+<p>Assume that I called the function <code>f1()</code>, We will get the following output:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">f1 : Line 1
+f1 : Line 2
+f1 : Line 3
+
+f2 : Line 1
+f2 : Line 2
+
+f1 : Line 4
+f1 : Line 5
+</code></pre></div><p>If you observe carefully, after printing the <code>f1 : Line 3</code> of the function
+<code>f1()</code> we switched to function <code>f2()</code> and we start executing it.</p>
+<p>Everything looks normal until now, where&rsquo;s the twist? You asked for it&hellip; :
+After printing the <code>f2 : Line 2</code>, when we encountered the <code>jump(f1)</code> statement
+we jumped back to function <code>f1()</code> and the function <code>f1()</code> continued from where
+we jumpedddd..</p>
+<p>Isn&rsquo;t it amazingggg. We were able to suspend a function and jump to a new
+function and then when we resumed the function, it resumed from the point it got
+suspened. Unlike the normal execution, where if you call a function, it executes
+again from the beginning.</p>
+<p>Honestly, I was mind blown, when I knew this was possible in <code>C++</code>. I knew we
+could do it in <code>python</code> (Well, we can do anything with it :P), But being able
+to do something like this in C++, is pretty cool. This opens up a lot of
+avenues.</p>
+<p>I won&rsquo;t drag on now :see_no_evil:,</p>
+<p>TL;DR &ndash;&gt; context is a library from Boost, that gives the programmer the ability
+to suspend and resume a context/state of a program whenever he wants to.</p>
+<h3 id="s390x-architecture">s390x Architecture</h3>
+<p>Linux on IBM Z (or Linux on Z for short, and previously Linux on z Systems) is
+the collective term for the Linux operating system compiled to run on IBM
+mainframes, especially IBM Z and IBM LinuxONE servers.</p>
+<p>Beginning with Linux kernel version 4.1 released in early 2015, Linux on Z is
+only available as a 64-bit operating system compatible with z/Architecture
+mainframes.</p>
+<p>Previously Linux on Z was also available as a 31-bit operating system compatible
+with older model mainframes introduced prior to 2000&rsquo;s z900 model. However, the
+newer 64-bit Linux kernel and 64-bit Linux on Z distributions are still backward
+compatible with applications compiled for 31-bit Linux on Z. Historically the
+Linux kernel architecture designations were &ldquo;s390&rdquo; and &ldquo;s390x&rdquo; to distinguish
+between the 31-bit and 64-bit Linux on Z kernels respectively, but &ldquo;s390&rdquo; now
+also refers generally to the one Linux on Z kernel architecture.</p>
+<p><em>P.S: I copied the text from the Wikipedia, I wasn&rsquo;t able to come up with
+better description about s390x</em></p>
+<h2 id="so-whats-your-entire-internship-about">So what&rsquo;s your entire internship about?</h2>
+<p>Boost.context does not work on s390x architecture. The reason for this that
+boost.context is completely depended on the assembly language files for that
+architecture.</p>
+<p>It mainly has three assembly files for all archs:</p>
+<ol>
+<li>jump_s390x_sysv_elf_gas.S    : context switch between two fibers/fiber_contexts</li>
+<li>make_s390x_sysv_elf_gas.S   : prepares stack for the first invocation</li>
+<li>ontop_s390x_sysv_elf_gas.S  : execute function on top of a fiber/fiber_context</li>
+</ol>
+<p>I&rsquo;ll explain what each of the files do in further posts.</p>
+<p>My tasks until Mid terms evals has been:</p>
+<ol>
+<li>Implmenet s390x arch in Boost.Context build file</li>
+<li>Implement make_context file</li>
+<li>Implement jump_context  file</li>
+</ol>
+<p>The PR has been created for the work <a href="https://github.com/boostorg/context/pull/111">at</a></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Naveen" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Hiyo Homospaien o/</p>
+      
+      
+      
+        
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+  </body>
+
+</html>
