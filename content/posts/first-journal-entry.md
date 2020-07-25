@@ -1,0 +1,163 @@
+---
+title: "Journal: Conflicts in emotions GSoC"
+date: 2019-05-27T16:30:06+05:30
+draft: false
+categories: ["journal"]
+---
+
+*Note: The following is a conversation that I have with myself. Most of it might
+not make sense to you. And there might not be any proper connection between points.
+That being said, this was written for my reference only. But you are more than
+welcome to go through it and have fun - if you like reading things that makes
+no sense :)*
+
+Hey People,
+
+Here I am again. This post is regarding the conflict of emotion that I have been facing since quite some time. I don't know if I can acknowledge it in public or not. Acknowledging in Public might have some adverse impact. But this needs to be be offloaded from my head. 
+
+Since, I don't have many people to discuss things with. I always resort back to talking to myself and finding a solution to it. The reason, I don't talk to people about what I feel is, In most of the cases - I found that people don't usually have answers to the fealings that I go through. And when asked for solution all they do is shrug away from the topic. I can't blame them though. It's usually my problem. I cannot expect people to have solutions to all my problem. It's an unfair expectation. Another reason being, I don't want to hold anybody else other me responsible for any outcomes of the action that i take. Or maybe I just trust myself.
+
+That being said, I only person who could ever come with up solutions very easily is my mom. She is awesome. I dunno how, but somehow she always has answers to most of the problems I go through. Not direct answers but, it's her sweet words and the genuiene concern she has. Most of the time, I could reach a conclusion just by listening to her speak. Somewhere in the middle of the conversation - Some solution strikes me. Maybe the reason for that is that she makes my heart feel lighter. In short I derive strength from both my mom and dad. Had it not been for them I would not be at a place where I am.
+
+Anyway enough of that and let's get along.
+
+So, what's this feeling that's troubling me for quite some time. I don't exactly understand this feeling myself. Or maybe, I do know what this is yet I don't want to accept it out loud. I feel that there is some distant being created in the project I am working. Okay, let's be really honest here.
+
+I guess I have lost interst in my GSoC project. That comes as a suprise. I don't know why am I feeling this way. I feel that I am no longer interested in this project. Or am I just mixing things up here.  The thing is I find myself to be forcing myself to keep my ass on chair and work. This is something new. I mean until now, The only reason I have been able to sit and work for so long time was because I felt the adrelanine rush through my blood whenever I coded and this was my kind of intoxication. Everyone has their own and programming was mine. 
+
+I love spending time, fixing bugs and reading through the code and deciphering it. Why is it, Why is it now - Now that I actually have some work to do. Something that I had been trying to get since past 1 year. Now that I have achieved it - The desire to work on the very project has lost.
+
+Okay Naveen! Calm down. There's always a solution for everything. Let's decipher this mixed feeling of yours.
+
+Everything was fine until - I had to make the cEP and get a proper idea. What happened after that? Nothing in specific. Maybe I lost the actual purpose of my efforts. Until last months - I did it because I wanted to get into GSoC and I like fixing bugs. But now, there's no final view. No it's not that. 
+
+I usually get motivated when I see some higher reason. Or maybe the project is too easy. Is that what I feel. Yes, That's a lead. I do feel that the project is easy. Naveen, remember - remember you liked this project because there was something really important. Something that had not been achieved before. Also, I do know that you feel that you aren't doing anything great. You are feeling that the thing that you are doing is easy and would have no impact on people's lives. 
+
+But remember Naveen, the only reason you feel this way is because, you had spent months of time on this project - trying out different approaches and it was only after that you reached a solution that might work. This wasn't easy Naveen. This was tough. You just forgot everything that you did.
+
+You always wanted to hack the core-coala didn;t you. Now you have been presented with the oppurtunity to do so. So i guess you need to do it. You need to prove the fact that your approach works. Even though if it doesn't work you need to lay the path to inform people how not to do it. This is really important Naveen. And if you look at it, This was the project that people were unable to come up with solutions but you did.
+
+Another thing, is that you are forcing yourself to work on it. You naveen start to dislike things when they are forced upon you. You made GSoC as a job. I know there are so many things you want to achieve. So many other fields you want to try. But if you do not do this right - Then that's a waste. Wastage of all the hardwork and trials you did until now.
+
+
+Remember the one year back Naveen. Who got really excited as he read the project. You have always loved it Naveen. You are laying the foundation of a domain that has never been explored before. You should be excited and happy. I know, it won't affect people directly, but still laying an entire new path for your fellow community member is something different. 
+
+Rememeber Naveen. You like this field. You just forgot what made you like it in the first place. You were always fascinated by all of it. Now you are getting a chance to shape the world in your small ways. So let's do it. Learn as much as you can through this. Learn well. And have fun.
+
+You can do it my boy. Learn everything that you can from it - Because you and I both know, we will be shifting away from coala as soon as this is done. So, before we do that - Let's give back something to coala. She did a lot of things for me. Now it's my time to do it and I will do it right.
+
+And also, Naveen. Just look at it. You have a better oppurtunities then lots of people out there. You have OMP, GSoC. You can learn a lot from both of these. I do know, that you feel sad because you aren't giving your best and in order to give your best - You need to maximize your time. AS you do see that you simply keep refershing your Gmail for no reason and keep checking your WhatsAPP for no reason. 
+
+See naveen, there are so many awesome things out there to learn. And if you have fun and finish these properly you can go ahead and tackle others too.
+
+
+Just tie your shoes and buckle up. This is an intersting piece of work. I know deep in your heart you know this isn't the place you like. Many another subsection of Computer Science interets you.  But before we jump there - Just let's do our final stint and keep working. Later when you do feel this way - Just imagine your happines when the entire things works and is in place.
+
+
+You would have set up some important feature upon which things can later be built. You are getting a chance to educate people and are helping them delve into this new world. Enlighten them with your knowledge Naveen. Do that.
+
+You are doing a great service.
+
+--------------------------------------------------------------------------
+P.S
+
+Now that I come back today(25-May), I realise that I had just lost my vision.
+The interest and my curiostiy has been revamped. I now am really excited to 
+explore and set work on the project. 
+
+Why? Why did this happen to me in the first place. I mean, why did I ever feel
+this conflict of interest. Why was there a sudden loss of interest. And that too
+a very drastic one. I am not yet sure of the reason, but going back in the 
+past, I realised that this is common.  I usually feel these urges or these
+mixed feelings of resentement of the current work I do. One reason for this is,
+I underestimate my work. I look at various other people and think that the work
+they do is way way better than what I do. I assume that there project/work
+would help them  learn much better. Would provide them with a wider knowledge
+base then what I currently am doing.
+
+I think, that's my nature. I disregard what I have with me at the moment and 
+look out and get fascinated by things that are out of reach. In some ways this
+very attribute of mine has made me try different things. Trying to achieve what
+I don't have. And I am not going to eliminate this from myself.
+
+But I need to remind myself from time to time, that you need to take things one
+step at a time. If you don't step properly you will end up falling down and 
+hurting yourself. All this is important if I ever want to be the creator of
+various life changing softwares. Yes, you see readers - Creating softwares 
+that will change the way Computer Science works is my goal.
+
+Okay! This might sound a little childish but I do dream of a day when the 
+software I create is used by people al over the world. Conferences are made
+on that software. Awesome things are made using my art (software) as the 
+foundation. I dream of the day when I wake up to a tons of thank you emails.
+
+__I dream of the day, when I walk through the door and People look at me admire.
+Admire my skills. The day when people accept me. Acknowledge me.__  
+
+Most importantly, I just would really like if my software can bring lot's of 
+people together and give them another reason to have fun and make relations.
+
+That being said, I won't ever monetize my software. If and when I do create 
+something like that - It would be realised to the world for FREE. It will be
+Open Sourced. Money doesn't interest me as much as the admiration of people 
+does to me. I can do other odd jobs for money but my software/my art - I want 
+that to be open for everyone out there. I will never ever stop the flow of
+knowledge and that's the reason - Why i pass on all the oppurtunites to the
+group of friends and everyone I know. Some people might think that I show
+off but Naah! I do it - Because it makes me happy. Happy when someone uses the
+information I give and use it to build new chapters in their life :)
+
+And in order to reach to such a level - I need to take one step at a time. 
+On every step I need to learn as much as I can and once I do learn it all move
+on. And in the process don't forget to have fun.
+
+I guess, this topic has got very branched. I warned you :P 
+Let's back to the main topic.
+
+Though I keep at other things and get very fascinated by them. I need to realise
+that I spend a lot of time at my laptop and yet achieve very less output. That's
+because of the fact that I spend my brain cells worrying about the fact of how
+to do other things. And this hampens my progress. Also, I need to get over the 
+way I quantify my progress. Naveen my boy, understand - Sitting long hours is not
+equivalent to progress. That's a very bad measure of quantifying. 
+
+In order to overcome this, I will from now on set the tasks that I want to achieve
+each day. Completion of all these tasks would mean that I have a productive day
+Else, it wasn't and some analysis needs to be done on what can be improved.
+
+This system though will need time to be perfected. Since the last two years, I have
+been trying to set this system up - But I fail and always fall back to the measure 
+of time. I guess, that been rooted into my system. But it'll change. 
+
+From today on - Tasks will be made everyday - It would include
+1. The tasks to accomplish on my project ( GSoC and OMP)
+2. The amount of SICP book to read
+3. What blogs to read
+4. Random surfin and reading content
+5. Any other college stuff I have to do.
+
+This way instead of focusing on time - I'll look at small minute tasks that I 
+would have to complete each day and scratch them of the list. 
+
+Let's see how this system pans out. If it works out  - well and good. Else we would
+jump on to something else.
+
+TL;DR
+The problem has been associated with my way of thinking. I tend to look at things
+that are not in my reach and disregard the current things that I have. Though this
+feeling helps me grow - But it also hampers my progress of the current tasks that
+I work. The feeling of reaching things not in my reach - works when I finish the
+things that I do take on.
+
+Another problem realised is the way I quantify my work. Until now - The measure has
+been time. Which is pretty bad and a faulty means. This has been shifted to a 
+`Daily Tasks` system. Let's see how it works.
+
+Also, Remember Naveen - When Other people can handle lot's of things in a single day
+and manage to be productive - You can too. Those people aren't very different then me.
+
+That's it for this post. Now that my curiosity has been reinstated and my interst on
+the project rejuvenated. I can't wait to hack my way through this summer.
+
+Sayonara `^_^`
+

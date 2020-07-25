@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Naveen Naidu">
+    <meta name="description" content="Hiya crawlers!
+This post will cover my learnings of phase 1 of GSoC with coala. As I explained in my previous GSOC post about the 4 different phases of my project. For the uninitatied, the project for my GSoC is to add functionality into coala which would enable it into Linting files that have nested languages.
+I divided my project into 4 phases:
+ Information Gathering Segregating the nested file Linting the file Assembling  For the newbies here, I highly suggest that you read the previous blog about the project.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GSOC: Phase 1 Overview"/>
+<meta name="twitter:description" content="Hiya crawlers!
+This post will cover my learnings of phase 1 of GSoC with coala. As I explained in my previous GSOC post about the 4 different phases of my project. For the uninitatied, the project for my GSoC is to add functionality into coala which would enable it into Linting files that have nested languages.
+I divided my project into 4 phases:
+ Information Gathering Segregating the nested file Linting the file Assembling  For the newbies here, I highly suggest that you read the previous blog about the project."/>
+
+    <meta property="og:title" content="GSOC: Phase 1 Overview" />
+<meta property="og:description" content="Hiya crawlers!
+This post will cover my learnings of phase 1 of GSoC with coala. As I explained in my previous GSOC post about the 4 different phases of my project. For the uninitatied, the project for my GSoC is to add functionality into coala which would enable it into Linting files that have nested languages.
+I divided my project into 4 phases:
+ Information Gathering Segregating the nested file Linting the file Assembling  For the newbies here, I highly suggest that you read the previous blog about the project." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naveenaidu.github.io/posts/gsoc-phase-1/" />
+<meta property="article:published_time" content="2019-06-28T16:30:06+05:30" />
+<meta property="article:modified_time" content="2019-06-28T16:30:06+05:30" />
+
+
+    
+      <base href="https://naveenaidu.github.io/posts/gsoc-phase-1/">
+    
+    <title>
+  GSOC: Phase 1 Overview · Naveenaidu
+</title>
+
+    
+      <link rel="canonical" href="https://naveenaidu.github.io/posts/gsoc-phase-1/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://naveenaidu.github.io/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://naveenaidu.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://naveenaidu.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://naveenaidu.github.io/">
+      Naveenaidu
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://naveenaidu.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://naveenaidu.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://naveenaidu.github.io/projects/">Projects</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">GSOC: Phase 1 Overview</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2019-06-28T16:30:06&#43;05:30'>
+                June 28, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              7-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://naveenaidu.github.io/categories/gsoc-2019/">gsoc-2019</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Hiya crawlers!</p>
+<p>This post will cover my learnings of phase 1 of GSoC with coala. As I explained
+in my previous GSOC post about the 4 different phases of my project. For the
+uninitatied, the project for my GSoC is to add functionality into coala which
+would enable it into <code>Linting files that have nested languages</code>.</p>
+<p>I divided my project into 4 phases:</p>
+<ul>
+<li>Information Gathering</li>
+<li>Segregating the nested file</li>
+<li>Linting the file</li>
+<li>Assembling</li>
+</ul>
+<p>For the newbies here, I highly suggest that you read the previous blog about
+the project. If you do feel lazy(when don&rsquo;t we :P) to go through the 700+ lines
+of content, I better give you a very high level view of the project:</p>
+<h2 id="a-higher-level-view-of-the-implementation">A higher level view of the implementation</h2>
+<p>A source file containing multiple programming languages is loaded up by coala.
+The original nested file is broken/split into <code>n</code> temporary files, where n is
+the number of languages present in the original file. Each temporary file only
+contains the snippets belonging to one language.</p>
+<p>These temporary files would then be passed to their respective language bears
+( <em>chosen by the user</em>) where the static analysis routines would run. The
+temporary files after being linted would then be assembled.
+The above process creates the illusion that the original file is being linted,
+but in reality we divide the files into different parts and lint them one by
+one.</p>
+<p>The figure below, would help give a clear picture</p>
+<p><img src="https://naveenaidu.github.io/images/4-gsoc-overview-nested-languages/high_level_view_handle_nested.jpg" alt="higher_level_view"></p>
+<p>If it&rsquo;s hard for you imagine - Think of it something like this, You are a
+factory worker working in a ball manufacturing company. This company produces
+two kind of balls - One <code>red</code> and one <code>blue</code>.  Both these balls have differnt
+properties and shapes. This factory is equipped with a Big <code>Ball Production Unit</code>,
+but alas - This unit produces both red and blue balls at the same time.As a
+result of which after one production cycle the output box/carton has mixture of
+<code>Red</code> and <code>Blue</code> balls.</p>
+<p>Your taks as a factory worker is to segregate the <code>red</code> and <code>blue</code> balls into
+different boxes and take these to the <code>Ball Testers</code>. Since the balls have
+different properties, you cannot take it to the same testers, hence you will
+take the Blue Ball to the <code>Blue Ball Validator</code> and Red Ball to the
+<code>Red Ball Validator</code>.</p>
+<p>These Validator validates the quality of the ball and discard the bad quality
+balls and replaces them with a nice quality balls.</p>
+<p>Once the Validation is done, You now have two boxes - One for Red balls with no
+defects and one for Blue Balls with no defects. Your final job is to combine
+both these boxes. (Factory worker thinks: <em>Duh! Why did you make me segregate
+the ball in the first place -.-</em>)</p>
+<p>The above analogy is what my work is all about. The factory worker is the
+coala tool. The ball tester are the coala bears/linters. The carton/box is the
+nested file that had mixture of languages(<em>read balls</em>). The nested file(<em>the
+box with the mixture of two different color balls</em>) is seperated into two different
+section where each section contains the lines of only one language(<em>read, the
+red and blue ball from the box is segeragated into <code>red box</code> and <code>Blue Box</code></em>).</p>
+<p>These sections that contain purely only one language(boxes with only one single
+color ball) is then taken to the respective coala-bears(<em>read <code>Ball validators</code></em>),
+these coala bears validates the files and fixes the file if any change needs to be
+done (<em>Note: coala-bears are linters</em>) and then send theses validated/linted
+file back to coala(the  two box with proper quality balls are handed back to
+factory worker). coala then finally mereges back both the files (<em>read: Factory
+worker then puts both the validated balls back into the same box</em>)</p>
+<hr>
+<h2 id="phase-1-work">Phase 1 Work</h2>
+<p>In Phase 1 of GSoC I decided to first handle the task of <code>segregating the nested file</code> into different sections. My aim in this phase was to be able to
+identify the sections that belongs to a particular language.</p>
+<p>Let&rsquo;s understand what this means:</p>
+<p>Suppose we have the following nested file which has both Jinja and Python.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">sys</span>
+<span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">thanos</span>
+
+x = <span style="color:#a50">&#34;hulk&#34;</span>
+
+{% raw %}{% <span style="color:#00a">if</span> x == <span style="color:#a50">&#34;hulk&#34;</span> %}
+	<span style="color:#00a">print</span>(<span style="color:#a50">&#34;Thanos is meat&#34;</span>) 
+{% <span style="color:#00a">else</span> %}
+	<span style="color:#00a">print</span>(<span style="color:#a50">&#34;Bhubyee! Earth&#34;</span>)
+{% endif %}{% endraw %}
+
+<span style="color:#00a">if</span>(y <span style="color:#00a">is</span> <span style="color:#00a">not</span> x):
+	<span style="color:#a50">&#34;Some gibberish&#34;</span>
+</code></pre></div><p>As you see in the above snippet - We have a mixture of <code>Python</code> and <code>Jinja</code>. And
+if we have to be able to lint these files seprately i.e if we have to convert
+the above file into <code>pure jinja</code> and <code>pure python</code> file, we would need to
+maintain the information about what lines belong to which language.</p>
+<p>We do this, by divinding the files into different section. I call these section
+<code>NlSection</code> which stand for <code>Nested language Section</code>.</p>
+<p>The above snippet can be divided into three sections:</p>
+<ol>
+<li><strong>Section 1</strong></li>
+</ol>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">sys</span>
+<span style="color:#00a">import</span> <span style="color:#0aa;text-decoration:underline">thanos</span>
+
+x = hulk
+
+</code></pre></div><ol start="2">
+<li><strong>Section 2</strong>
+{% raw %}</li>
+</ol>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{% if x == &#34;hulk&#34; %}
+	print(&#34;Thanos is meat&#34;) 
+{% else %}
+	print(&#34;Bhubyee! Earth&#34;)
+{% endif %}
+</code></pre></div><p>{% endraw %}</p>
+<ol start="3">
+<li><strong>Section 3</strong></li>
+</ol>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a">if</span>(y <span style="color:#00a">is</span> <span style="color:#00a">not</span> x):
+	<span style="color:#00a">print</span>(<span style="color:#a50">&#34;Some gibberish&#34;</span>)
+</code></pre></div><p>Divinding the files into various sections, makes the work of linting the file
+easier. What we do after creating sections is that we group the sections on the
+basis of their language and then make <code>pure python</code> and a <code>pure jinja</code> file.
+These pure files would then be passed upon to the respective language bears.</p>
+<p><em>NOTE: Creating sections does mean that we create new sections rather I mean that
+we maintain the infromation such as the <code>line_start</code> and <code>line_end</code> in the
+original file.</em></p>
+<h3 id="nlsection">NlSection</h3>
+<p>Each of the section we made in the nested language file is termed as <code>NlSection</code>.
+A NlSection has the following information:</p>
+<ul>
+<li>Start line number of the section</li>
+<li>Start column number of the section</li>
+<li>End line number of the section</li>
+<li>End column number of the section</li>
+<li>The path of the nestedfile</li>
+</ul>
+<p>The start and end information of the sections are inturn a <code>NlSectionPosition</code>
+object.</p>
+<p>That means NlSection comprises of two object <code>start</code> and <code>end</code>, and these objects
+are of the type <code>NlSectionPosition</code>.</p>
+<p>NlSectionPosition has better functionality to store line numbers and column
+numbers along with proper testing.</p>
+<h3 id="parsers">Parsers</h3>
+<p>Parsers are responsible to take in the input nested file and split out the
+<code>NlSections</code> list. For my case - I have as of now only made a parser that can for
+the combination of <code>Jinja</code> and <code>Python</code>. I named it as <code>PyJinjaParser</code>.</p>
+<p>This parser can take in a nested Jinja and Python file and emit out the list
+of NlSections of Python and Jinja.</p>
+<p>The above explanation sums up pretty much my work for Phase 1. I wish to write
+about this in more details - but time bounds me :/</p>
+<hr>
+<p><a href="https://github.com/Naveenaidu/coala/pull/2"><strong>The Link to Phase 1 PR</strong></a></p>
+<p>For now, I would refer you to the above PR link, I have seen to that it is well
+documented. Thanks to my mentor Virresh - I did write enough tests to give
+me peace of mind that the work until now works.</p>
+<hr>
+<p>P.S:</p>
+<p>I have <strong>passed</strong> Phase 1. Hurrah!. I must thank my mentor for his valuable
+feedback and his patient reviews. Honestly I myself was skeptical of making it
+this far. You know, handling OMP, Exams and GSOC. But everything did work out
+fine. My final exam would be on 3rd of July. It&rsquo;s python - So it&rsquo;s pretty chill.</p>
+<p>So unofficially - My exams have already ended today :P</p>
+<p>Also, the community bonding of Open mainframe is done too. Stipend of both
+GSoC and OMP have been released. It kinda feel good. My Second salary :)</p>
+<p>Ahaaahhh! I gotta go now - How I wish I can write more. Alas! that&rsquo;s it for
+now my dear bots. Saynora until next post :)</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Naveen" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Hiyo Homospaien o/</p>
+      
+      
+      
+        
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+  </body>
+
+</html>
